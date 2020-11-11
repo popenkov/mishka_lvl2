@@ -1,12 +1,18 @@
 .item-of-the-week {
     border: 1px solid red;
     width: $mobile-width;
+
     transform: translateX( -($mobile-width - $mobile-container) / 2);
 }
 
 .item-of-the-week__wrapper {
     width: $mobile-container;
     margin: 0 auto;
+}
+
+.item-of-the-week__title {
+    margin: 0;
+    padding: 0;
 }
 
 .item-of-the-week__table {
@@ -25,6 +31,13 @@
     width: 100px;
 }
 
+.item-of-the-week__photo {
+    background-image: url('../img/mobile/item-of-the-week__photo.jpg');
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 315px;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     .item-of-the-week {
        width: $tablet-width;
@@ -35,7 +48,88 @@
     .item-of-the-week__wrapper {
         width: $tablet-container;
         
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
+    .item-of-the-week__title {
+
+        font-size: 43px;
+        line-height: 50px;
+        font-weight: bold;
+        text-transform: uppercase; 
+     }
+
+    .item-of-the-week__description-container {
+        width: 291px;
+    }
+
+    .item-of-the-week__photo {
+        background-image: url('../img/item-of-the-week__photo--tablet.jpg');
+        background-repeat: no-repeat;
+        width: 333px;
+        height: 404px;
+    }
 }
 
+
+
+@media (min-width: $desktop-width) {
+
+    .item-of-the-week {
+        width: $desktop-container;
+        transform: translateX(0px);
+
+       
+        
+         
+     }
+ 
+     .item-of-the-week__wrapper {
+         width: 875px;
+         margin: 0;
+         margin-top: 73px;
+         margin-bottom: 73px;
+         margin-left: auto;
+         
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+
+         border: 1px solid rebeccapurple;
+         
+     }
+ 
+     .item-of-the-week__title {
+        position: absolute;
+        margin-right: 10%;
+        margin-top: 70px;
+         font-size: 53px;
+         line-height: 57px;
+         font-weight: bold;
+         text-transform: uppercase; 
+      }
+
+      .item-of-the-week__subtitle {
+        position: absolute;
+        left: 0;
+      }
+ 
+     .item-of-the-week__description-container {
+        position: absolute;
+        top: 241px; // !!!!!!!!!!
+
+
+        width: 291px;
+     }
+ 
+     .item-of-the-week__photo {
+         background-image: url('../img/item-of-the-week__photo--desktop.jpg');
+         background-repeat: no-repeat;
+         width: 525px;
+         height: 636px;
+         margin-left: auto;
+     }
+
+}
