@@ -1,0 +1,42 @@
+body {
+    border: 1px solid yellow;
+    min-width: $mobile-width;
+}
+
+.body_container {
+    margin: 0 auto;
+    border: 1px solid yellow;
+    width: $mobile-container;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width)  {
+
+    .body_container {
+        width: $tablet-container;
+        border: 1px solid yellow;
+    }
+   
+   
+} 
+
+@media (min-width: $desktop-width) {
+
+    .body_container {
+        width: $desktop-container;
+        border: 1px solid yellow;
+    }
+   
+   
+} 

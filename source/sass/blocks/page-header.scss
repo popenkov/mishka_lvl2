@@ -1,0 +1,128 @@
+.page-header {
+    background-color: #ffffff;
+}
+
+.page-header__wrapper {
+    
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid $grey-border;
+}
+
+
+.page-header__logo {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    margin-left: -43px;
+    top: 50%;
+    margin-top: -17px;
+
+}
+
+.page-header__menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.page-header__background-image {
+    width: $mobile-width;
+    transform: translateX(-30px);
+    margin: 0 auto;
+
+    height: 282px;
+    background-image: url('../img/mobile/catalog-header__img.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    border: 1px solid dodgerblue;
+    
+}
+
+
+.page-header__background-title {
+    /* position: absolute; */
+    top: 50%;
+    margin-top: 50%;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width)   {
+    .page-header__wrapper {
+        width: $tablet-container;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-header__menu-toggle {
+        display: none;
+    }
+     
+    .page-header__logo {
+        position: static;
+        left: 0;
+        margin: 0;
+        top: 0;
+        margin-right: 200px;
+    }
+
+    .page-header__background-image {
+        width: $tablet-width;
+        transform: translateX(-50px);
+        height: 627px;
+        background-image: url('../img/main-background-tablet768-746.png');
+        background-repeat: no-repeat;
+        position: relative;
+        border: 1px solid dodgerblue;
+        
+    }
+
+    .page-header__background-title {
+        margin-top: 50%;
+    }
+   
+} 
+
+@media (min-width: $desktop-width) {
+    .page-header__wrapper {
+        width: $desktop-container;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .page-header__logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -43px;
+        top: 50%;
+        margin-top: -17px;
+    
+    }
+
+    .page-header__menu-toggle {
+        display: none;
+    }
+
+    .page-header__background-image {
+        width: $desktop-width - 100px;
+        transform: translateX(-50px);
+        height: 627px; 
+        background-image: url('../img/main-background-desktop.jpg');
+        background-repeat: no-repeat;
+        position: relative;
+        border: 1px solid dodgerblue;
+                
+    }
+
+    .page-header__background-title {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+   
+}

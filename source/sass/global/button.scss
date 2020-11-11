@@ -1,0 +1,15 @@
+.button {
+    display: block;
+    width: 254px;
+    border: 2px solid $dark-grey;
+    margin: 0;
+    padding: 0;
+    padding: 18px 0;
+    margin: 0 auto;
+
+    color: $dark-grey;
+    text-align: center;
+
+
+    transform: translateX(-1px);
+}
