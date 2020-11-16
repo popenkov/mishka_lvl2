@@ -1,6 +1,7 @@
 .reviews {
     
     margin-top: 65px;
+    
     width: $mobile-width;
     transform: translateX( -($mobile-width - $mobile-container) / 2);
     background-image: none;
@@ -9,9 +10,12 @@
 
 .reviews__wrapper {
     position: relative;
+    
+   
     width: $mobile-container;
     border: 1px solid red;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .reviews__title {
@@ -90,4 +94,41 @@
         top: 0;
         right: 0;
     }
+}
+
+
+@media (min-width: $desktop-width) {
+
+    .reviews {
+        border: 1px solid red;
+        width: $desktop-container;
+        transform: translateX(0);
+        background-image: url('../img/review-background--350_457.jpg');
+        background-repeat: no-repeat;
+
+        
+    }
+
+    .reviews__wrapper {
+        width: 875px;
+        height: 457px;
+        margin: 0;
+       
+        margin-left: 175px;
+        
+    }
+
+    .reviews__title {
+        margin-top: 75px;
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .reviews__write-review-button {
+        margin-top: 75px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
