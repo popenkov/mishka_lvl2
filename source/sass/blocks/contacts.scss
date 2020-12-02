@@ -5,9 +5,12 @@
     transform: translateX( -($mobile-width - $mobile-container) / 2);
     background-image: none;
     border: 1px solid red;
+
+    
 }
 
 .contacts__wrapper {
+    margin-bottom: 40px;
     
 }
 
@@ -47,7 +50,6 @@
 
 
     font-size: 15px;
-    /* line-height: 30px; */
     color: $dark-grey;
     padding-bottom: 8px;
     border-bottom: 1px solid #62d1ba;

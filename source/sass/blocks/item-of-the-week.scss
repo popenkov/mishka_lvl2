@@ -1,12 +1,15 @@
 .item-of-the-week {
     border: 1px solid red;
     width: $mobile-width;
-
-    transform: translateX( -($mobile-width - $mobile-container) / 2);
+    
+    transform: translateX(-30px);
+    
 }
 
 .item-of-the-week__wrapper {
     width: $mobile-container;
+    
+    /* transform: translateX( -($mobile-width - $mobile-container) / 2); */
     margin: 0 auto;
 }
 
