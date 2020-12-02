@@ -1,6 +1,18 @@
 .page-footer {
     min-width: $mobile-width;
-    max-width: $tablet-width;
     transform: translateX( -($mobile-width - $mobile-container) / 2);
     background-color: #f1f1f1;
+}
+
+
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    min-width: $tablet-width;
+    transform: translateX( ($tablet-width - $tablet-container) / 2);
+    
+
+}
+
+@media (min-width: $desktop-width) {
+    min-width: $desktop-width;
 }
