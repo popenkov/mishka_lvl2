@@ -1,0 +1,6 @@
+.page-footer {
+    min-width: $mobile-width;
+    max-width: $tablet-width;
+    transform: translateX( -($mobile-width - $mobile-container) / 2);
+    background-color: #f1f1f1;
+}
