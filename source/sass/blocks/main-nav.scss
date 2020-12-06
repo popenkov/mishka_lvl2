@@ -12,16 +12,20 @@
     display: none;
 }
 
+
+
+//если кликнуть по мобильной версии, а затем не закрывая меню отдалиться, то меню поедет. а елси сразу открыть на планшете и выше, то все норм
 .main-nav__wrapper--active {
     display: flex;
     flex-direction: column;
     position: absolute; 
     z-index: 2;
     background-color: #ffffff; 
-    width: $mobile-container;
-    transform: translateY(81px);
-    } 
 
+
+    width: $mobile-width;
+    transform: translate(-29px, 81px);
+}
 
 
 .main-nav__list--active {
@@ -55,6 +59,7 @@ margin-top: -7px;
         display: flex;
         flex-wrap: wrap;
     }
+
     
     .main-nav__free-delivery {
         display: block;
@@ -62,6 +67,9 @@ margin-top: -7px;
         right: 0;
         top: 115px;
         z-index: 1;
+        color: $dark-grey;
+        font-size: 15px;
+        line-height: 24px;
     }
 }
 
@@ -79,5 +87,8 @@ margin-top: -7px;
         right: 0;
         top: 115px;
         z-index: 1;
+        color: $dark-grey;
+        font-size: 15px;
+        line-height: 24px;
     }
 }

@@ -2,6 +2,7 @@
 
 .site-list {
     /* display: none; */
+   
 }
 
 
@@ -13,11 +14,22 @@
 .site-list__link {
     position: relative;
     display: block;
-    padding: 35px 45px;
+    box-sizing: border-box;
+    /* padding: 35px  45px;  */ 
     border-bottom: 1px solid $grey-border;
    
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
 
+   
+    width: $mobile-width;
+    padding: 35px  75px;  
+   
 }
+
+
 .site-list__link:nth-child(1) {
     margin-right: 35px;
 }
@@ -38,9 +50,11 @@
     }
     
     .site-list__link {
+        width: auto;
         margin: 0;
         padding: 0;
         border-style: none;
+        font-size: 15px;
     }
 
    
@@ -66,9 +80,11 @@
     }
 
     .site-list__link {
+        width: auto;
         margin: 0;
         padding: 0;
         border-style: none;
+        font-size: 15px;
     }
 
 }
