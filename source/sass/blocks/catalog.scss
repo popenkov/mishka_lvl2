@@ -1,8 +1,8 @@
 .catalog {
 
     position: relative;
-    min-width: $mobile-width;
-    transform: translateX(-30px);
+    width: $mobile-width;
+    margin: 0 auto;
 }
 
 
@@ -47,24 +47,21 @@
 
 .catalog__list-item:first-child {
 
-    /* transform: translateX(-30px); */
     background-color: #63d1bb;
 }
 
 .catalog__list-link.catalog--interiors .catalog__link-container{
     width: $mobile-container;
-    /* transform: translateX(-30px); */
     background-color: #63d1bb;
 }
 
 .catalog__list-item:last-child {
-    /* transform: translateX(-30px); */
+
     background-color: #56c3b2;
 }
 
 .catalog__list-link.catalog--toys .catalog__link-container{
     width: $mobile-container;
-    /* transform: translateX(-30px); */
     background-color: #56c3b2;
 }
 
@@ -81,22 +78,28 @@
 
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
-
+    .catalog {
+        margin: 0 auto;
+        width: auto;
+    }
    
 
     .catalog__list {
         display: flex;
         flex-direction: row;
-        transform: translateX(30px);
+        
     }
 
     .catalog__list-item {
-        width: 334px;
+        min-width: ($tablet-width / 2);
+        width: 100%;
+        /* width: 334px; */
     }
 
     .catalog__list-link.catalog--interiors .catalog__link-container,
     .catalog__list-link.catalog--toys .catalog__link-container {
-        margin: 30px 35px;   
+        margin: 0;
+        padding: 9% 10.4%;    /* 30px 35px */
         
         width: auto;
 
@@ -119,6 +122,12 @@
 }
 
 @media (min-width: $desktop-width) {
+
+    .catalog {
+        margin: 0 auto;
+        width: auto;
+    }
+
     .catalog__link-container {
        
     }
@@ -126,17 +135,22 @@
     .catalog__list {
         display: flex;
         flex-direction: row;
-        transform: translateX(30px);
+        
         
     }
 
+    
+
     .catalog__list-item {
-        width: 525px;
+        /* width: 525px; */
+        min-width: ($desktop-width / 2);
+        width: 100%;
     }
 
     .catalog__list-link.catalog--interiors .catalog__link-container,
     .catalog__list-link.catalog--toys .catalog__link-container {
-        margin: 30px 35px;   
+        margin: 0;
+        padding: 9% 10.4%;    /* 30px 35px */
         
         width: auto;
     }
