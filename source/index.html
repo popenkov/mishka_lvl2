@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка - милые штуки ручной  работы для дома</title>
+
+
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
     
     
 </head>
@@ -35,8 +39,9 @@
         <li class="site-list__item site-list__item--sale"><a class="site-list__link" href="">Распродажа</a></li>
     </ul>   
     <ul class="main-nav__list user-list">
-        <li class="user-list__item  user-list__list--search"><a class="user-list__link user-list__link--search" href=""> <img class="user-list__link--search-img" height="18" width="18" src="/img/mobile/site-list__link--search.png" alt=""> <span class="user-list__link--search-text">Поиск по сайту</span> </a></li>
-        <li class="user-list__item user-list__list--shopping_cart"><a class="user-list__link user-list__link--shopping_cart " href="">Корзина: пока пуста</a></li>
+        <li class="user-list__item  user-list__list--search"><a class="user-list__link user-list__link--search" href=""> <img class="user-list__link--img user-list__link--search-img" height="18" width="18" src="/img/mobile/site-list__link--search.png" alt=""> <span class="user-list__link--search-text">Поиск по сайту</span> </a></li>
+
+        <li class="user-list__item user-list__list--shopping_cart"><a class="user-list__link user-list__link--shopping_cart " href=""> <img class="user-list__link--img user-list__link--shopping_cart-img" height="18" width="22" src="/img/mobile/site-list__link--shopping_cart.png" alt=""> Корзина: пока пуста</a></li>
         
     </ul>
     <p class="main-nav__free-delivery">Бесплатная доставка по России</p>
@@ -56,7 +61,7 @@
     <div class="page-header__background-image-container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     
-        <h2 class="page-header__background-title">Милые штуки ручной работы для дома</h2> 
+        <h2 class="page-header__background-title">Милые штуки ручной <br> работы для дома</h2> 
     </div>
 </div>
 
@@ -71,7 +76,7 @@
                 <li class="catalog__list-item">
                     <a href="" class="catalog__list-link catalog--interiors">
                     <div class="catalog__link-container">
-                        <h3 class="catalog__link-title">Предметы интерьера</h3>
+                        <h3 class="catalog__link-title">Предметы <br> интерьера</h3>
                         <img src="../img/mobile/catalog--lamp.png" alt="" width="40" height="62" class="catalog__image catalog__image--lamp">
                     </div>
                     </a>
@@ -80,7 +85,7 @@
                 <li class="catalog__list-item">
                     <a href="" class="catalog__list-link catalog--toys">
                     <div class="catalog__link-container">
-                        <h3 class="catalog__link-title">Детские игрушки</h3>
+                        <h3 class="catalog__link-title">Детские <br> игрушки</h3>
                         <img src="../img/mobile/catalog--toy.png" alt="" width="60" height="60" class="catalog__image catalog__image--constructor">
                     </div>
                     </a>
@@ -116,7 +121,7 @@
     <div class="item-of-the-week__wrapper">
         <h2 class="visually-hidden">Товар недели</h2>
         <h2 class="item-of-the-week__title">Вязаные корзинки</h2>
-        <p class="item-of-the-week__subtitle">Товар недели</p>
+        <p class="item-of-the-week__subtitle"> <span> Товар </span> <br> недели</p>
 
 
         <div class="item-of-the-week__description-container">
@@ -150,7 +155,7 @@
 
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 319 6">
+    <svg class="item-of-the-weak__wave-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 319 6">
         <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
       <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -224,9 +229,10 @@
 
     <section class="contacts">
         <div class="contacts__wrapper">
-
+        <img src="../img/contacts__flag-img.png" width="47" height="81" alt="" class="contacts__flag-img">
         <div class="contacts__text">
         <h2 class="contacts__title">Контакты</h2>
+        
         <table class="contacts__table">
             <tr class="contacts__table-tr">
                 <td class="contacts__table-td-name contacts__email">e-mail:</td>
@@ -234,13 +240,16 @@
             </tr>
             <tr class="contacts__table-tr">
                 <td class="contacts__table-td-name contacts__address">адрес:</td>
-                <td class="contacts__table-td-value contacts__address-value"> <p class="contacts__address-p"> г. Санкт-Петербург, <br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</td> </p>
+                <td class="contacts__table-td-value contacts__address-value"> <p class="contacts__address-p"> г. Санкт-Петербург, <br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101
+                </p></td> 
             </tr>
             
         </table>
+
+        
         </div>
 
-        <img src="../img/mobile/map-mobile@1x.jpg" alt="" width="320" height="457" class="contacts__map">
+        <div class="contacts__map-container"><img src="../img/mobile/map-mobile@1x.jpg" alt="" width="320" height="457" class="contacts__map"></div>
 
         
         <a href="" class="contacts__button button">Напишите нам</a>
@@ -254,6 +263,8 @@
 
 <footer class="page-footer">
     <div class="page-footer__wrapper">
+
+    <img src="" alt="" width="" class="footer__logo-img">
 
     <div class="page-footer__social social">
 

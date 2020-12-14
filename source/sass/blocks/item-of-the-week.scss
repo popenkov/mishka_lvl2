@@ -1,5 +1,5 @@
 .item-of-the-week {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: $mobile-width;
     
     transform: translateX(-30px);
@@ -12,6 +12,7 @@
     
     /* transform: translateX( -($mobile-width - $mobile-container) / 2); */
     margin: 0 auto;
+    margin-bottom: 35px;
 }
 
 .item-of-the-week__title {
@@ -32,6 +33,10 @@
     color: #63d1bb;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.item-of-the-week__subtitle br {
+    display: none;
 }
 
 .item-of-the-week__description {
@@ -92,9 +97,7 @@
 }
 
 
-.item-of-the-weak__wave-img {
-    margin-top: 35px;
-}
+
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     .item-of-the-week {
@@ -109,6 +112,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 53px;
     }
 
     .item-of-the-week__title {
@@ -118,6 +122,25 @@
         font-weight: bold;
         text-transform: uppercase; 
      }
+     .item-of-the-week__subtitle {
+         
+         display: flex;
+         flex-direction: column;
+         line-height: 17px;
+     }
+
+     .item-of-the-week__subtitle br {
+         
+         font-size: 0px;
+         line-height: 0px;
+        display: block;
+    }
+
+    .item-of-the-week__subtitle span {
+        text-align: center;
+        height: 0;
+       
+    }
 
     .item-of-the-week__description-container {
         width: 291px;
@@ -146,6 +169,7 @@
  
      .item-of-the-week__wrapper {
          width: 875px;
+         height: 636px;
          margin: 0;
          margin-top: 73px;
          margin-bottom: 73px;
@@ -155,14 +179,15 @@
          flex-wrap: wrap;
          justify-content: space-between;
 
-         border: 1px solid rebeccapurple;
          
      }
  
      .item-of-the-week__title {
+         
         position: absolute;
         margin-right: 10%;
         margin-top: 70px;
+        
          font-size: 53px;
          line-height: 57px;
          font-weight: bold;
@@ -170,16 +195,44 @@
       }
 
       .item-of-the-week__subtitle {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 17px;
         position: absolute;
-        left: 0;
-      }
+        left: 48px;
+        top: 80px;
+
+    }
+
+    .item-of-the-week__subtitle br {
+        
+        font-size: 0px;
+        line-height: 0px;
+       display: block;
+   }
+
+   .item-of-the-week__subtitle span {
+       text-align: center;
+       height: 0;
+      
+   }
  
      .item-of-the-week__description-container {
         position: absolute;
-        top: 241px; // !!!!!!!!!!
+        top: 164px; // !!!!!!!!!!
 
 
         width: 291px;
+     }
+
+     .item-of-the-week__description {
+         margin-top: 0;
+         margin-bottom: 70px;
+     }
+
+     .item-of-the-week__table {
+         margin-bottom: 87px;
      }
  
      .item-of-the-week__photo {
@@ -190,4 +243,7 @@
          margin-left: auto;
      }
 
+     .item-of-the-week__button {
+         margin-top: auto;
+     }
 }
