@@ -39,3 +39,27 @@
     height: 20px;
     
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    
+    .social {
+
+    border-bottom: none;
+    }
+ 
+   
+   
+    
+}
+
+@media (min-width: $desktop-width) {
+    
+    .social {
+
+    border-bottom: none;
+    }
+ 
+   
+   
+    
+}

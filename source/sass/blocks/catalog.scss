@@ -90,6 +90,11 @@
         
     }
 
+    .catalog__link-title {
+        font-size: get-vw(20px);
+        line-height: get-vw(30px);
+    }
+
     .catalog__list-item {
         min-width: ($tablet-width / 2);
         width: 100%;

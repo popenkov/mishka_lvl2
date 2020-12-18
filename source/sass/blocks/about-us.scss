@@ -1,5 +1,9 @@
+.about-us {
+    margin: 0 auto;
+}
 .about-us__wrapper {
     width: $mobile-container;
+    margin: 0 auto;
 }
 
 .about-us__title {
@@ -10,7 +14,7 @@
     font-weight: bold;
 }
 
-.about-us__features-list {
+.about-us__features-list {   
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,16 +43,17 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
 
     .about-us__wrapper {
-        width: $tablet-container;
+        min-width: $tablet-container;
+        width: 86%;
     }
 
     .about-us__title {
-        font-size: 43px;
-        line-height: 50px;
+        font-size: get-vw(43px);
+        line-height: get-vw(50px);
     }
 
     .about-us__features-list {
-        width: 635px;
+        width: 82%; //635   ÷   768
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -56,16 +61,24 @@
     }
 
     .about-us__features-item {
-        width: 299px;
+        width: 42%; //299px   ÷   768 =38 но сделал побольше
         margin-top: 60px;
+    }
+    .about-us__features-item br {
+        display: none;
     }
 }
 
 @media (min-width: $desktop-width) {
+    .about-us {
+        max-width: $max-width;
+    }
+    
     .about-us__wrapper {
 
-        width: $desktop-container;
         
+        min-width: $desktop-container;
+        width: 61%; //700/1150
     }
 
     .about-us__title {
@@ -77,7 +90,7 @@
 
     .about-us__features-list {
         margin-left: 175px;
-        width: 648px;
+       /*  width: 59%; */ //648px / 1250px = 51.8%
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -85,7 +98,12 @@
     }
 
     .about-us__features-item {
-        width: 299px;
+        width: 44%; // 299px / 1250px поставил больше
+        
         margin-top: 60px;
+    }
+
+    .about-us__features-item br {
+        display: none;
     }
 }

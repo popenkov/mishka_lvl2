@@ -1,8 +1,8 @@
 .item-of-the-week {
-    /* border: 1px solid red; */
-    width: $mobile-width;
     
-    transform: translateX(-30px);
+    min-width: $mobile-width;
+    margin: 0 auto;
+   
     margin-top: 33px;
     
 }
@@ -10,7 +10,7 @@
 .item-of-the-week__wrapper {
     width: $mobile-container;
     
-    /* transform: translateX( -($mobile-width - $mobile-container) / 2); */
+    
     margin: 0 auto;
     margin-bottom: 35px;
 }
@@ -42,7 +42,7 @@
 .item-of-the-week__description {
     margin: 0;
     padding: 0;
-    margin-top: 33px;
+    margin-top: 10%; // 33px /320
 
     font-size: 15px;
     line-height: 24px;
@@ -52,7 +52,7 @@
 
 
 .item-of-the-week__table {
-    margin-top: 33px;
+    margin-top: 10%; // 33px / 320
 
     font-size: 15px;
     line-height: 20px;
@@ -60,7 +60,7 @@
 
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 8%; // 28 / 320
 }
 
 .item-of-the-week__table-row {
@@ -77,10 +77,10 @@
 }
 
 .item-of-the-week__photo {
-    background-image: url('../img/mobile/item-of-the-week__photo.jpg');
-    background-repeat: no-repeat;
+    /* background-image: url('../img/mobile/item-of-the-week__photo.jpg');
+    background-repeat: no-repeat; */
     width: 260px;
-    height: 315px;
+    /* height: 315px; */
 }
 
 .item-of-the-week__price {
@@ -101,14 +101,19 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     .item-of-the-week {
-       width: $tablet-width;
-       transform: translateX( -($tablet-width - $tablet-container) / 2);
         
+       min-width: $tablet-width;
+       
+       width: 100%;
+       /* transform: translateX( -($tablet-width - $tablet-container) / 2); */
+         
     }
 
     .item-of-the-week__wrapper {
-        width: $tablet-container;
-        
+       /*  min-width: $tablet-container; */
+       
+        width: 86%; // 668   ÷   768
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -117,8 +122,8 @@
 
     .item-of-the-week__title {
 
-        font-size: 43px;
-        line-height: 50px;
+        font-size: get-vw(43px);
+        line-height: get-vw(50px);
         font-weight: bold;
         text-transform: uppercase; 
      }
@@ -126,7 +131,8 @@
          
          display: flex;
          flex-direction: column;
-         line-height: 17px;
+         line-height: get-vw(17px);
+         margin-right: 3%;
      }
 
      .item-of-the-week__subtitle br {
@@ -143,14 +149,23 @@
     }
 
     .item-of-the-week__description-container {
-        width: 291px;
+        width: 37.8%; // делим  ширину блока 291px на ширину окна 768px 
+        display: flex;
+        flex-direction: column;
+
     }
 
     .item-of-the-week__photo {
-        background-image: url('../img/item-of-the-week__photo--tablet.jpg');
+        /* background-image: url('../img/item-of-the-week__photo--tablet.jpg');
         background-repeat: no-repeat;
-        width: 333px;
-        height: 404px;
+        background-size: 100% auto; */
+        margin-top: auto;
+        width: 43%; // 333px / 768
+        /* height: 404px; */ // 404px / 768
+    }
+
+    .item-of-the-week__price {
+        margin-top: auto;
     }
 }
 
@@ -159,8 +174,10 @@
 @media (min-width: $desktop-width) {
 
     .item-of-the-week {
-        width: $desktop-container;
+        min-width: $desktop-container;
+        max-width: $max-width;
         transform: translateX(0px);
+       /*  border: 1px solid red; */
 
        
         
@@ -168,8 +185,9 @@
      }
  
      .item-of-the-week__wrapper {
-         width: 875px;
-         height: 636px;
+        width: 76%; // 875 / 1150
+ 
+         min-height: 636px;
          margin: 0;
          margin-top: 73px;
          margin-bottom: 73px;
@@ -200,7 +218,7 @@
         flex-direction: column;
         line-height: 17px;
         position: absolute;
-        left: 48px;
+        left: 8%; //48 / 1150 = 4%
         top: 80px;
 
     }
@@ -236,8 +254,8 @@
      }
  
      .item-of-the-week__photo {
-         background-image: url('../img/item-of-the-week__photo--desktop.jpg');
-         background-repeat: no-repeat;
+         /* background-image: url('../img/item-of-the-week__photo--desktop.jpg');
+         background-repeat: no-repeat; */
          width: 525px;
          height: 636px;
          margin-left: auto;
