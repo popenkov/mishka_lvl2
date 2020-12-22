@@ -15,10 +15,12 @@ const cleancss = require('gulp-clean-css');
 // Определяем логику работы Browsersync
 function browsersync() {
     browserSync.init({ // Инициализация Browsersync
-        server: { baseDir: 'source/' }, // Указываем папку сервера
+        /* server: { baseDir: 'source/' }, */  // Указываем папку сервера
         notify: false, // Отключаем уведомления
         online: true // Режим работы: true или false
     })
+
+    
 }
 
 // Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
