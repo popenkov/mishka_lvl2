@@ -330,6 +330,7 @@ template {
 body {
   border: 1px solid yellow;
   min-width: 320px;
+  max-width: 3250px;
   font-family: 'Open Sans', sans-serif; }
 
 .body__no-scroll {
@@ -349,18 +350,19 @@ a {
 
 /* @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
 
-    .body_container {
+   /*  .body_container {
         width: $tablet-container;
         border: 1px solid yellow;
     }
-   
+    */
+/*
    
 } 
 
 @media (min-width: $desktop-width) {
 
     .body_container {
-        width: $desktop-container;
+        max-width: $max-width;
         border: 1px solid yellow;
     }
    
@@ -1601,18 +1603,37 @@ a {
 .modal-window--show {
   display: block;
   position: fixed;
-  top: 25%;
+  top: 5%;
   left: 50%;
   margin-left: -130px;
   z-index: 12;
-  height: 100%;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  -webkit-box-shadow: 0px 17px 19px -9px #cdcdcd;
+          box-shadow: 0px 17px 19px -9px #cdcdcd;
+  height: auto;
   overflow: hidden; }
 
 .modal-window__form-container {
   width: 260px;
   margin: 0 auto; }
 
+.modal-window__form-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
+  margin-bottom: 29px;
+  text-align: center; }
+
+.modal-window__form-paragraph {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+  text-align: center; }
+
 .modal-window__radio-container {
+  margin: 0 auto;
+  margin-bottom: 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1624,6 +1645,8 @@ a {
   display: none; }
 
 .modal-window__radio-title {
+  margin: 0;
+  padding: 0;
   border: 2px solid #ececec;
   width: 78px;
   text-align: center;
@@ -1634,7 +1657,38 @@ a {
   border: 2px solid #63d1bb; }
 
 .modal-window__button {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 46px;
+  background-color: #63d1bb;
+  border: none;
+  color: #ffffff; }
+
+@media (min-width: 768px) and (max-width: 1250px) {
+  .modal-window--show {
+    width: 74%;
+    top: 25%;
+    left: 50%;
+    margin-left: -37%; }
+  .modal-window__form-container {
+    width: 46%; }
+  .modal-window__form-title br {
+    display: none; }
+  .modal-window__radio-title {
+    width: 108px; } }
+
+@media (min-width: 1250px) {
+  .modal-window--show {
+    width: 74%;
+    max-width: 1000px;
+    top: 25%;
+    left: 50%;
+    margin-left: -37%; }
+  .modal-window__form-container {
+    width: 46%; }
+  .modal-window__form-title br {
+    display: none; }
+  .modal-window__radio-title {
+    width: 108px; } }
 
 .visually-hidden {
   position: absolute;

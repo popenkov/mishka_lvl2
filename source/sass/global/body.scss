@@ -1,11 +1,14 @@
 body {
     border: 1px solid yellow;
     min-width: $mobile-width;
+    max-width: $max-width + 1600px;
     
     font-family: 'Open Sans', sans-serif;
     
       
 }
+
+
 
 .body__no-scroll {
     height: 100%;
@@ -30,18 +33,18 @@ a {
 
 /* @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
 
-    .body_container {
+   /*  .body_container {
         width: $tablet-container;
         border: 1px solid yellow;
     }
-   
+    *//*
    
 } 
 
 @media (min-width: $desktop-width) {
 
     .body_container {
-        width: $desktop-container;
+        max-width: $max-width;
         border: 1px solid yellow;
     }
    
