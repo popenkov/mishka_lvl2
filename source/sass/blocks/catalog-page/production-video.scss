@@ -1,0 +1,106 @@
+.production-video {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid $grey-border;
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+        /* display: block; */
+    }
+}
+
+.production-video__title-container{
+    margin: 0 auto;
+    width: 74%; //192/260
+    display: flex;
+    /* justify-content: space-between; */
+   align-items: center;
+   
+   margin-top: 30px;
+   
+}
+
+.production-video__camera-img {
+    margin-right: 25px;
+}
+
+.production-video__title {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.production-video__video_container {
+    margin-top: 30px;
+
+    background-color: red;
+    
+    position: relative;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        order: -1;
+        margin-top: 0;
+        height: 455px;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: -1;
+        width: 682px;
+        height: 455px;
+
+        position: relative;
+        
+    }
+}
+
+.production-video__video-preview {
+    background-color: red;
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 150px;
+
+    @media (min-width: $desktop-width) {
+        
+    }
+}
+
+.production-video__play-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -15%; // 38.5 / 260 половина высоты картинки на ширину контейнера, так как высота от ширины измеряется
+    left: 50%;
+    margin-left: -19.4%; //50.5  / 260
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        top: 50%;
+    margin-top: -5%; // 38.5/ 668  половина высоты картинки на ширину контейнера, так как высота от ширины измеряется
+    left: 50%;
+    margin-left: -7.5%; //50.5  / 668
+    }
+}
+
+/* .production-video__play-button-img {
+    width: 101px;
+    height: 77px;
+} */
+
+.production-video__decription {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 74%; //192/260
+}
+
+.production-video__button {
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    width: 74%; //192/260 
+}
