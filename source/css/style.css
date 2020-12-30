@@ -1637,7 +1637,7 @@ a {
       min-width: 1150px;
       max-width: 1650px;
       margin-top: 110px;
-      margin-bottom: 58px; } }
+      margin-bottom: 105px; } }
 
 .catalog__list {
   padding: 0;
@@ -1791,52 +1791,111 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
   @media (min-width: 768px) and (max-width: 1150px) {
     .production-video {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 52px; } }
   @media (min-width: 1150px) {
     .production-video {
-      /* display: block; */ } }
+      max-width: 1650px;
+      width: 86%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-top: 60px; } }
+
+.production-video__decription-container {
+  margin: 0 auto;
+  width: 74%; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .production-video__decription-container {
+      width: 87%; } }
+  @media (min-width: 1150px) {
+    .production-video__decription-container {
+      width: 22%; } }
 
 .production-video__title-container {
-  margin: 0 auto;
-  width: 74%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: space-between; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 215px; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .production-video__title-container {
+      margin-bottom: 40px; } }
+  @media (min-width: 1150px) {
+    .production-video__title-container {
+      margin-bottom: 50px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .production-video__camera-img {
   margin-right: 25px; }
+  @media (min-width: 1150px) {
+    .production-video__camera-img {
+      margin-right: 0;
+      margin-bottom: 25px; } }
 
 .production-video__title {
   margin: 0;
   padding: 0;
   font-size: 17px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-weight: bold; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .production-video__title {
+      font-size: 2vw;
+      line-height: 2.4vw; } }
+  @media (min-width: 1150px) {
+    .production-video__title {
+      font-size: 20px;
+      line-height: 24px; } }
+
+.production-video__decription {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444; }
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .production-video__decription {
+      font-size: 1.5vw;
+      line-height: 3vw; } }
+  @media (min-width: 1150px) {
+    .production-video__decription {
+      font-size: 15px;
+      line-height: 30px; } }
+
+.production-video__button {
+  /* margin: 0 auto; */
+  margin-top: 55px;
+  margin-bottom: 30px;
+  width: 100%; }
 
 .production-video__video_container {
-  margin-top: 30px;
+  margin-top: 40.5%;
   background-color: red;
-  position: relative; }
+  position: absolute; }
   @media (min-width: 768px) and (max-width: 1150px) {
     .production-video__video_container {
-      -webkit-box-ordinal-group: 0;
-          -ms-flex-order: -1;
-              order: -1;
+      position: relative;
       margin-top: 0;
       height: 455px; } }
   @media (min-width: 1150px) {
     .production-video__video_container {
-      -webkit-box-ordinal-group: 0;
-          -ms-flex-order: -1;
-              order: -1;
-      width: 682px;
+      margin-top: 0;
+      width: 65%;
       height: 455px;
       position: relative; } }
 
@@ -1864,17 +1923,6 @@ a {
     width: 101px;
     height: 77px;
 } */
-.production-video__decription {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 74%; }
-
-.production-video__button {
-  margin: 0 auto;
-  margin-top: 55px;
-  margin-bottom: 30px;
-  width: 74%; }
-
 .modal-window {
   display: none;
   background-color: #ffffff;
