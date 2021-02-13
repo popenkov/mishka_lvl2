@@ -133,15 +133,16 @@
 }
 
 .production-video__video-preview {
-    background-color: red;
-    display: block;
-    margin: 0 auto;
-    width: 260px;
-    height: 150px;
+    /* background-color: red;
+    display: block; */
+    /* margin: 0 auto; */
+    /* width: 260px;
+    height: 150px; */
+    /* width: 100%; */
 
-    @media (min-width: $desktop-width) {
+  /*   @media (min-width: $desktop-width) {
         
-    }
+    } */
 }
 
 .production-video__play-button {

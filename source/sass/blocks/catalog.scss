@@ -74,6 +74,32 @@
     position: absolute;
     height: 24px;
     z-index: 10;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        display: block;
+        position: absolute;
+        height: 24px;
+        /*  width: $tablet-width;*/
+        width: 3000px;
+        bottom: 0;
+        left: -40px;
+ 
+
+        background-image: url("../img/zigzag-fill-desktop.png");
+        background-repeat: repeat-x; 
+    }
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        position: absolute;
+        /* height: 34px; */
+        width: 3000px;
+        bottom: 0;
+        /* left: -40px; */
+
+        background-image: url("../img/zigzag-fill-desktop.png");
+        background-repeat: repeat-x;
+    }
 }
 
 
@@ -111,18 +137,7 @@
     }
 
 
-    .catalog__zigzak {
-        display: block;
-        position: absolute;
-        height: 24px;
-        width: $tablet-width;
-        bottom: 0;
-        left: -40px;
- 
-/* 
-        background-image: url("../img/zigzag-fill-desktop.png");
-        background-repeat: repeat-x; */
-    }
+   
     
 }
 
@@ -161,15 +176,5 @@
     }
 
 
-    .catalog__zigzak {
-        display: block;
-        position: absolute;
-        height: 34px;
-        width: $desktop-width;
-        bottom: 0;
-        left: -40px;
-
-        background-image: url(../img/zigzag-fill-desktopsvg.svg);
-        background-repeat: repeat-x;
-    }
+   
 }

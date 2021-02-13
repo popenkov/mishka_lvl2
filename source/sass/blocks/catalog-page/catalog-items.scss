@@ -20,7 +20,7 @@
         }
 }
 
-.catalog__list {
+.catalog__ul {
     
     padding: 0;
     margin: 0 auto;
@@ -28,11 +28,12 @@
     flex-direction: column;
 
     @media (min-width: $desktop-width) {
-        width: 86% ; //1050   ÷   1250
+        width: 86% ; //1050   ÷   1250 
+        
         flex-direction: row;
         justify-content: space-between;
     }
-}
+}  
 
 .catalog__item {
     width: 81%; //260px / 320
