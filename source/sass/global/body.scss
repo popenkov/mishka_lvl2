@@ -1,7 +1,8 @@
 body {
+    margin: 0 auto;
     border: 1px solid yellow;
-    min-width: $mobile-width;
-    max-width: $max-width + 1600px;
+    min-width:  $mobile-width;
+    max-width: $max-width /* + 1600px */;
     
     font-family: 'Open Sans', sans-serif;
     
@@ -29,6 +30,13 @@ a {
     text-decoration: none;
 }
 
+.body_container {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+        /* width: 91%; */
+    }
+}
 
 
 /* @media (min-width: $tablet-width) and (max-width: $desktop-width)  {

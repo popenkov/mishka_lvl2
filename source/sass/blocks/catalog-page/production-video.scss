@@ -2,7 +2,7 @@
     margin: 0 auto;
     margin-top: 30px;
     border: 1px solid $grey-border;
-    width: 81%;
+    /* width: 81%; */
     display: flex;
     flex-direction: column;
     position: relative;
@@ -14,42 +14,61 @@
 
     @media (min-width: $desktop-width) {
         max-width: $max-width;
-        width: 86%;
-        flex-direction: row;
+        /* width: 86%; */
+        flex-direction: column;
         margin-top: 60px;
+        padding-left: 682px;
     }
 }
 
 .production-video__decription-container {
-    margin: 0 auto;
-    width: 74%; //192/260
+    margin: 0;
+    /* width: 74%; */ //192/260
+    margin-left: 35px;
+    margin-right: 35px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width){
-        width: 87%; //584   ÷   668 
+        order: 1;
+        /* width: 87%; */ //584   ÷   668 
     }
 
     @media (min-width: $desktop-width) {
-        width: 22%; //232   ÷   1050
+        /* width: 24%; */ //232   ÷   1050
+        margin-left: 80px;
+        margin-right: 55px;   
     }
 }
 
 .production-video__title-container{
-    
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+   margin-bottom: 30px;
+    /* width: 74%; */ //192/260
     display: flex;
  
    align-items: center;
    
-   margin-top: 30px;
-   margin-bottom: 215px;
+   
 
    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    /* width: 87%; */
+    order: 1;
     margin-bottom: 40px;
 }
 
 @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    /* width: 24%;  */
+    order: 0;
     flex-direction: column;
     align-items: flex-start;
+
+    
+    
+    margin-top: 57px;
+    margin-left: 80px;
+        margin-right: 55px;
+    margin-bottom: 40px;
 }
    
 }
@@ -64,6 +83,7 @@
 }
 
 .production-video__title {
+    
     margin: 0;
     padding: 0;
     font-size: 17px;
@@ -71,6 +91,7 @@
     font-weight: bold;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        
         font-size: get-vw(20px);
     line-height: get-vw(24px);
     }
@@ -105,52 +126,80 @@
       margin-top: 55px;
       margin-bottom: 30px;
       width: 100%; //192/260 
+
+      @media (min-width: $desktop-width)  {
+        margin-top: 25px;
+        margin-bottom: 59px;
+    }
   }
   
 
 .production-video__video_container {
-    margin-top: 40.5%; //100 / 260
+    /* margin-top: 96px; */ //100 / 260 //было 40.5%
 
-    background-color: red;
+    /* background-color: red; */
     
     
-    position: absolute;
+   /*  position: absolute;
+    
+    
+    left: 50%;
+    margin-left: -35%; */
+    margin: 0 auto;
+    
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         position: relative;
         margin-top: 0;
-        height: 455px;
+        left: 0;
+        margin-left: 0;
+    width: 100%;
     }
 
     @media (min-width: $desktop-width) {
         margin-top: 0;
-        width: 65%; //682   ÷   1050
-        height: 455px;
+        /* width: 65%; */ //682   ÷   1050
+        left: 0;
+    margin-left: 0;
 
-        position: relative;
+  
+        position: absolute;
+        left: 0;
+        top: 0;
         
     }
 }
 
 .production-video__video-preview {
-    /* background-color: red;
-    display: block; */
-    /* margin: 0 auto; */
-    /* width: 260px;
-    height: 150px; */
-    /* width: 100%; */
 
-  /*   @media (min-width: $desktop-width) {
+    width: 260px; // 260 / 320
+    
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        display: block;
+        margin: 0 auto;
         
-    } */
+    
+        width: auto;
+        
+    }
+
+
+    @media (min-width: $desktop-width) {
+        width: auto;
+        left: 0;
+    margin-left: 0;
+    }
 }
 
 .production-video__play-button {
     position: absolute;
-    top: 50%;
-    margin-top: -15%; // 38.5 / 260 половина высоты картинки на ширину контейнера, так как высота от ширины измеряется
     left: 50%;
-    margin-left: -19.4%; //50.5  / 260
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -90px;
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         top: 50%;
@@ -158,10 +207,13 @@
     left: 50%;
     margin-left: -7.5%; //50.5  / 668
     }
+
+    @media (min-width: $desktop-width) {
+        top: 50%;
+    margin-top: -5%; // 38.5/ 668  половина высоты картинки на ширину контейнера, так как высота от ширины измеряется
+    left: 50%;
+    margin-left: -7.5%; //50.5  / 668
+    }
 }
 
-/* .production-video__play-button-img {
-    width: 101px;
-    height: 77px;
-} */
 

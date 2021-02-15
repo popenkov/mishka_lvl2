@@ -3,6 +3,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
     min-width: $mobile-width;
+    max-width: 1050px;
+
+
+    
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         min-width: $tablet-width;
@@ -13,8 +17,8 @@
 
 
     @media (min-width: $desktop-width) {
-        min-width: $desktop-width;
-        max-width: $max-width;
+        /* min-width: $desktop-width; */
+        
         margin-top: 110px;
         margin-bottom: 105px;
         }
@@ -25,10 +29,12 @@
     padding: 0;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     @media (min-width: $desktop-width) {
-        width: 86% ; //1050   ÷   1250 
+        /* width: 86% ; */ //1050   ÷   1250 
         
         flex-direction: row;
         justify-content: space-between;
@@ -36,11 +42,11 @@
 }  
 
 .catalog__item {
-    width: 81%; //260px / 320
+    width: 260px; //260px / 320 // было 81%
     
     margin: 0;
     padding: 0;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-bottom: 30px;
 
   
@@ -49,19 +55,22 @@
 
     border: 1px solid #ededed;
 
+    /*  */
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         min-width: $tablet-width;
         width: 100%; //668 / 768px
+        /* margin: 0 auto; */
         margin-bottom: 55px;
 
         display: flex;
     }
 
     @media (min-width: $desktop-width) {
-        margin: 0;
+        /* margin: 0 auto; */
     padding: 0;
-        width: 30%; //316   ÷   1050 (измеряем от контейнера) = 27%
+        width: 316px; //316   ÷   1050 (измеряем от контейнера) = 27% !!!!!!!было 30%
     }
 }
 
@@ -73,6 +82,7 @@
 .catalog__item-photo {
     background-color: red;
     height: 195px;
+    width: 260px;
 
    
     padding: 0;
@@ -81,11 +91,12 @@
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
         margin: 0;
-        width: 50%;
+        width: 334px; //было 50%
         height: 334px;
     }
 
     @media (min-width: $desktop-width) {
+        width: 316px;
         height: 462px;
     }
 }

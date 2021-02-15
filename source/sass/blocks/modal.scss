@@ -2,6 +2,7 @@
     display: none;
     background-color: #ffffff;
     z-index: 2;
+    
 }
 
 .modal-window--show {
@@ -11,10 +12,11 @@
     left: 50%;
     margin-left: -130px;
     z-index: 12;
-
+    width: 260px; //260  ÷  320 = 81%
    border-top: 1px solid #c7c7c7; 
    border-bottom: 1px solid #c7c7c7;     
    box-shadow: 0px 17px 19px -9px rgba(205,205,205,1);
+   
     
 //отключаю скролл
     height: auto;
@@ -25,7 +27,7 @@
 }
 .modal-window__form-container {
     
-    width: 260px; //260  ÷  320 = 81%
+    
     margin: 0 auto;
 }
 

@@ -15,137 +15,144 @@
 
 </head>
 
-<header class="page-header">
-
-    <div class="page-header__wrapper">
-
-
-        <a href="" class="page-header__logo">
-            <a href="" class="page-header__logo">
-                <picture>
-                    <source media="(min-width: 1150px)" srcset="../source/img/mishka-logo--desktop.png">
-                    <source media="(min-width: 768px)" srcset="../source/img/mishka-logo--tablet.png">
-                    <img src="../source/img/mobile/mishka-logo-mobile.png" alt="Логотип" class="main-logo__svg">
-                </picture>
-            </a>
-        </a>
-
-        <button class="page-header__menu-toggle"><img src="../source/img/mobile/menu-button.png" width="20"
-                height="14" alt="" class="page-header__menu-image"></button>
-
-        <nav class="main-nav">
-            <div class="main-nav__wrapper">
-
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item"> <a class="site-list__link" href="/source/catalog.html">Каталог товаров</a></li>
-                    <li class="site-list__item"><a class="site-list__link" href="">Вязание на заказ</a></li>
-                </ul>
-                <ul class="main-nav__list site-list--additional">
-                    <li class="site-list__item site-list__item--new-arrival"><a class="site-list__link"
-                            href="">Новые поступления</a></li>
-                    <li class="site-list__item site-list__item--sale"><a class="site-list__link"
-                            href="">Распродажа</a></li>
-                </ul>
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item  user-list__list--search"><a
-                            class="user-list__link user-list__link--search" href=""> <img
-                                class="user-list__link--img user-list__link--search-img" height="18" width="18"
-                                src="../source/img/mobile/site-list__link--search.png" alt=""> <span
-                                class="user-list__link--search-text">Поиск по сайту</span> </a></li>
-
-                    <li class="user-list__item user-list__list--shopping_cart"><a
-                            class="user-list__link user-list__link--shopping_cart " href=""> <img
-                                class="user-list__link--img user-list__link--shopping_cart-img" height="18"
-                                width="22" src="../source/img/mobile/site-list__link--shopping_cart.png" alt="">
-                            Корзина: пока пуста</a></li>
-
-                </ul>
-                <p class="main-nav__free-delivery">Бесплатная доставка по России</p>
-                <button class="main-nav__list__closure-button" type="button"> <img
-                        src="../source/img/mobile/menu-close.png" width="21" height="20" alt=""> Закрыть окно
-                </button>
-
-
-
-
-
-            </div>
-        </nav>
-
-    </div>
-
-
-    <div class="page-header__background-image">
-        <div class="page-header__background-image-container">
-            <h2 class="visually-hidden">Каталог товаров</h2>
-
-            <h2 class="page-header__background-title">Милые штуки ручной <br> работы для дома</h2>
-        </div>
-    </div>
-
-
-
-
-
-    <section class="catalog">
-
-
-        <ul class="catalog__list">
-            <li class="catalog__list-item">
-                <a href="" class="catalog__list-link catalog--interiors">
-                    <div class="catalog__link-container">
-                        <h3 class="catalog__link-title">Предметы <br> интерьера</h3>
-                        <img src="../source/img/mobile/catalog--lamp.png" alt="" width="40" height="62"
-                            class="catalog__image catalog__image--lamp">
-                    </div>
-                </a>
-            </li>
-
-            <li class="catalog__list-item">
-                <a href="" class="catalog__list-link catalog--toys">
-                    <div class="catalog__link-container">
-                        <h3 class="catalog__link-title">Детские <br> игрушки</h3>
-                        <img src="../source/img/mobile/catalog--toy.png" alt="" width="60" height="60"
-                            class="catalog__image catalog__image--constructor">
-                    </div>
-                </a>
-            </li>
-
-
-        </ul>
-
-        <div class="catalog__zigzak"> <!-- <svg xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" width="1250" height="34" viewBox="0 0 1250 34">
-                <metadata>
-                    <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                        x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                            <rdf:Description rdf:about="" />
-                        </rdf:RDF>
-                    </x:xmpmeta>
-
-
-
-
-                    <?xpacket end="w"?>
-                </metadata>
-                <image id="zigzag-fill-desktop.svg" width="1250" height="34"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAABOIAAAAiCAQAAABYKL5qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCwgODBkxJSAMAAAJeklEQVR42u2da3AW1R3GnwSKEiXhqlwDXmgRBxIqWgoI4SISAavV2hF0pBTRilW/tR9sbccydoqg0BacMtoqd7AyFihMp6PcEisikPSG3ASKghASQltFAZ9+CBTeJO++e/ac864bnt/7iUxmn/llz/7P/z17dskhDGmGEpSgGL3QHgXIwSc4gQOoxBaswkHTgxnTGWPRH0UoRAFagjiBKuxABd7EepzynN0MgzESfdEb7ZGPXJxELQ6iAu9iFQ54N++EMbgRReiOfOQBqEUVdqAS6/BmVsyHozgm844Y26j5eryRBfNBGIEi9EaHFPOtWJk1877oIfOsmsc52uuu82IUxnKd34wRZytcAXL+b74Fq7Ng3nht3451WantQzHsAvNsz2rjcEOK+dGzs9qGLJkX4boG5ivxQRbMb8cNKEK3Bubrcdq7eQmGoaiRTiZb5v3RF4XIr2e+DmcMj0WTTyGf5zGmp5zfZnOjI4b/5PIubuTnabOr+Ute5Skb7MpneSTA/G2O92h+J9cFmNdwDq+RufNPF04PNN/MCR7N78hgPjdG83diNfd7zjONdp/m3ww0r+YcXu3NvCtnBJq/xXubaG0v5ExWBZj7ndXuZlmg+Wz28Gj+XMb5vJk382+xPNB8Frt7NM/Uydzj0fwelgdkV3MWC02OGP5XCzibp5mZnRztQXw4/xEi+zRfYFvn2fmcyc9CpO/mGA/mJfxbKPN5HsxbcUYo8z1ezIfGav5sKPO9HOfF/K8hss9wHtt5MJ8e0vz22Myb4mgPe53/JsYKt8uLedjaPpdtPJjP4qkQ6X5mtZH8ZyjzX3swL+DsGM1v4Y6Q5q29mIfrZEZ5Md8ZyvxXLAh7zLDRo3g4RPQ5FjHfofblfMkg+wjHOv2jD+dBg/RlTgfdZZxnkF3Fbzg1H3bRmpcYmS93WmLzDM3vcGo+NEHm8Y52l+amo91t+zzCyHxJ+MklxMe0trttIm/hhwbprme13xmZlzo1H2VkvoCtnJq/YpB92Lm5SScz36l5K0PzW8MdN8wv5XKaQXQde9jHkXivUD17KtMdLYXm8CmeMcx+n/0cmX+Ffzc2n+nM/McJM3/emfmTxub7+FVH5j0jmM+K0Xx/rObuznnSRru769y8wu1lkSPzKLX9F87Mnw64mdc47ma160Ktx6Tyc2fmP4vVfJex+TOOzKN0Mrt5vSPz6yOYT2Nu5iNnjs7j68bRJPlvJytio3g8UvpqB9+a8rg0UvZ/eacD8xGsiZS+xsE35ZaJNP+TA/NLuThS9se8y4H5MFbLPOvmyRztLq7zqBXuP05WQaPXdvvVkTyuiJTtZlYbzdpI6St5eYzmLlZBo5tf5sA8Widzgrc5MC/liUjprzMv07EzRXfg5kjRJHmGD1mKTwy1U6NxtrGTVXY7llmYf9/S/D4L8wp2scpuy00W5o8l2nyjhfnjlubjrcy7WmW3sTJ/IlbzOEe77Tm3Ge3b2dkq267CTbU0t6ntW9nRKrsD37Iwt53VvhNqL1rjvMsrLc3fjtF8Uqi9aI2zhVdYmtt0Mg9amn/XeL37PO9kMg+Ovpa7I0fXMY05kcV/ZJm9j70iZ/eIsNCfynQL8x9YZh9gbwvzMJttm6J5d2vzGTGa/8ti2b8w1NbyL6p5vOfcZrT/0DJ7v9V1blvhnrEwf9Iy26a2Xx3hVmYqNrPaU5bZe/nlyNnXRLihl8rTFuY/idHcvpP5aWTzHGvzPewZlBAUPphHLcNJcj4viSDewmirbzqqWRLpz36T0ebHdCxhywjZX+ILDrJrODyi+aEYzec6yD7OkZHM+xtt9U3HssyL3418mnOOzK3MRyRwtMd7nbuocIt4aYRsN7X9WMTaPoAfOUiPOquZPMaRjioOiWQ+MPAVMr7NfxuruYtO5mW2iGT+soPsoxycPiN9+GSL5e5Uyo1v9XTkOkfZn/ER4z/7/fzEUfpms/e9ELyCbzjKPhXhlm7TMD8d4ZbuffzYUfqWCOZ/jtF8wkVr3jRG+yk+GqP5X4xr+5Wx1vaJPOkoPcqstsGZufmNzUn81Jm56QaGTg7NpxibT3ZmXma8gaGzxZaF+uZpb+k2/uM2XOQoug6z1wGUOvmudJ5XDd6mle+kbz5PNe82MDd78Dszr7G9gbmLb4lfFPMVMZrXGJmbvebAtfmLTcj84h3tvzcyd13hTB7vKHWyAnie5QZvzSvgfKfZprOai3Ww8yw1Ml/g2Nzk7ZhjHJsvMXi9TxsudJp91Mh8nGPzxY2bN/xRLh9wHF3HilBvGy/kMg/ZVZwS4p3bubzfye2V+qzitSHMuzlunOuoDmk+oQmaPxTK/F7HE2odq4N3MZz9dHVcYs6ZPxzS/IMmZx7unI+PdbRHewo4mGOxVrg/hDIvjPgsbDBVnBzS3O3SQB3hZrXuXO4h+wgnhTJ/wIv5azGbZ37piD/zHqHMX/ViPrGheeo/23Gq9QbA9JzmIg5K+96THA7gK85u4TbkfT4W8JRHWz7M9zyaL+WQAPOv8SWP5vv5eKD5FOstzuk5k8H8pljNH/RqvizQ/EbP5k8Emk9uwuZxnvM4r/N9Gcz9VrjFgea+a/ujgebfs97QH2S+iAMDzedbPI2aib2cyg4B5o94NV/Ir2cwj/40aib2cGrA+nNbz53MQg5Ia57LAVzg0Xw3p6beW8xhaxSgNXqiCIMwFLne/+PXQ1iLbajEIdTiU1yCfHREEYoxGl28Z3+OTdiISuxEDWoB5KM1eqIvBmMImntP/whrsRUVOIQTOIkWKEBH9EE/3IpuWTAvwyZU4D0cx/ELzAdhaJM3L8dGVGAnalLMB6IkC+ZHsAbbUIEPU8yLMVrmWTC/GEd7GTagEjvrmWenwh3GWmytV9v7oB9Ks1LbN2LTBbW9AAXoiWIMws1ZMG84q3VCXxSjFJ2zYL4BZSnm5+bzIWiWBfM12I4KHK5nfhs6ZcF8PcqxHbsbmGenk/kjtqMyNvMyVGAXjqM2h/QeKIQQQgghHOO/XxVCCCGEEM5REyeEEEIIkUDUxAkhhBBCJBA1cUIIIYQQCURNnBBCCCFEAlETJ4QQQgiRQNTECSGEEEIkEDVxQgghhBAJRE2cEEIIIUQCURMnhBBCCJFA1MQJIYQQQiQQNXFCCCGEEAlETZwQQgghRAJREyeEEEIIkUDUxAkhhBBCJBA1cUIIIYQQCURNnBBCCCFEAlETJ4QQQgiRQNTECSGEEEIkkP8BAyrafwRVFloAAAAASUVORK5CYII=" />
-            </svg> --></div>
-
-
-    </section>
-
-</header>
 
 <body>
-    <div class="body_container">
+    
+
+<div class="body_container">
+
+
+    <header class="page-header">
+
+        <div class="page-header__wrapper">
+    
+    
+            
+                <a href="" class="page-header__logo">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="../source/img/mishka-logo--desktop.png">
+                        <source media="(min-width: 768px)" srcset="../source/img/mishka-logo--tablet.png">
+                        <img src="../source/img/mobile/mishka-logo-mobile.png" alt="Логотип" class="main-logo__svg">
+                    </picture>
+                </a>
+            
+    
+            <button class="page-header__menu-toggle"><img src="../source/img/mobile/menu-button.png" width="20"
+                    height="14" alt="" class="page-header__menu-image"></button>
+    
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+    
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"> <a class="site-list__link" href="/source/catalog.html">Каталог товаров</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="">Вязание на заказ</a></li>
+                    </ul>
+                    <ul class="main-nav__list site-list--additional">
+                        <li class="site-list__item site-list__item--new-arrival"><a class="site-list__link"
+                                href="">Новые поступления</a></li>
+                        <li class="site-list__item site-list__item--sale"><a class="site-list__link"
+                                href="">Распродажа</a></li>
+                    </ul>
+                    <ul class="main-nav__list user-list">
+                        <li class="user-list__item  user-list__list--search"><a
+                                class="user-list__link user-list__link--search" href=""> <img
+                                    class="user-list__link--img user-list__link--search-img" height="18" width="18"
+                                    src="../source/img/mobile/site-list__link--search.png" alt=""> <span
+                                    class="user-list__link--search-text">Поиск по сайту</span> </a></li>
+    
+                        <li class="user-list__item user-list__list--shopping_cart"><a
+                                class="user-list__link user-list__link--shopping_cart " href=""> <img
+                                    class="user-list__link--img user-list__link--shopping_cart-img" height="18"
+                                    width="22" src="../source/img/mobile/site-list__link--shopping_cart.png" alt="">
+                                Корзина: пока пуста</a></li>
+    
+                    </ul>
+                    <p class="main-nav__free-delivery">Бесплатная доставка по России</p>
+                    <button class="main-nav__list__closure-button" type="button"> <img
+                            src="../source/img/mobile/menu-close.png" width="21" height="20" alt=""> Закрыть окно
+                    </button>
+    
+    
+    
+    
+    
+                </div>
+            </nav>
+    
+        </div>
+    
+    
+        <div class="page-header__background-image">
+            <div class="page-header__background-image-container">
+                <h2 class="visually-hidden">Каталог товаров</h2>
+    
+                <h2 class="page-header__background-title">Милые штуки ручной <br> работы для дома</h2>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <section class="catalog">
+    
+    
+            <ul class="catalog__list">
+                <li class="catalog__list-item">
+                    <a href="" class="catalog__list-link catalog--interiors">
+                        <div class="catalog__link-container">
+                            <h3 class="catalog__link-title">Предметы <br> интерьера</h3>
+                            <img src="../source/img/mobile/catalog--lamp.png" alt="" width="40" height="62"
+                                class="catalog__image catalog__image--lamp">
+                        </div>
+                    </a>
+                </li>
+    
+                <li class="catalog__list-item">
+                    <a href="" class="catalog__list-link catalog--toys">
+                        <div class="catalog__link-container">
+                            <h3 class="catalog__link-title">Детские <br> игрушки</h3>
+                            <img src="../source/img/mobile/catalog--toy.png" alt="" width="60" height="60"
+                                class="catalog__image catalog__image--constructor">
+                        </div>
+                    </a>
+                </li>
+    
+    
+            </ul>
+    
+            <div class="catalog__zigzak"> <!-- <svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="1250" height="34" viewBox="0 0 1250 34">
+                    <metadata>
+                        <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                            x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about="" />
+                            </rdf:RDF>
+                        </x:xmpmeta>
+    
+    
+    
+    
+                        <?xpacket end="w"?>
+                    </metadata>
+                    <image id="zigzag-fill-desktop.svg" width="1250" height="34"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAABOIAAAAiCAQAAABYKL5qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCwgODBkxJSAMAAAJeklEQVR42u2da3AW1R3GnwSKEiXhqlwDXmgRBxIqWgoI4SISAavV2hF0pBTRilW/tR9sbccydoqg0BacMtoqd7AyFihMp6PcEisikPSG3ASKghASQltFAZ9+CBTeJO++e/ac864bnt/7iUxmn/llz/7P/z17dskhDGmGEpSgGL3QHgXIwSc4gQOoxBaswkHTgxnTGWPRH0UoRAFagjiBKuxABd7EepzynN0MgzESfdEb7ZGPXJxELQ6iAu9iFQ54N++EMbgRReiOfOQBqEUVdqAS6/BmVsyHozgm844Y26j5eryRBfNBGIEi9EaHFPOtWJk1877oIfOsmsc52uuu82IUxnKd34wRZytcAXL+b74Fq7Ng3nht3451WantQzHsAvNsz2rjcEOK+dGzs9qGLJkX4boG5ivxQRbMb8cNKEK3Bubrcdq7eQmGoaiRTiZb5v3RF4XIr2e+DmcMj0WTTyGf5zGmp5zfZnOjI4b/5PIubuTnabOr+Ute5Skb7MpneSTA/G2O92h+J9cFmNdwDq+RufNPF04PNN/MCR7N78hgPjdG83diNfd7zjONdp/m3ww0r+YcXu3NvCtnBJq/xXubaG0v5ExWBZj7ndXuZlmg+Wz28Gj+XMb5vJk382+xPNB8Frt7NM/Uydzj0fwelgdkV3MWC02OGP5XCzibp5mZnRztQXw4/xEi+zRfYFvn2fmcyc9CpO/mGA/mJfxbKPN5HsxbcUYo8z1ezIfGav5sKPO9HOfF/K8hss9wHtt5MJ8e0vz22Myb4mgPe53/JsYKt8uLedjaPpdtPJjP4qkQ6X5mtZH8ZyjzX3swL+DsGM1v4Y6Q5q29mIfrZEZ5Md8ZyvxXLAh7zLDRo3g4RPQ5FjHfofblfMkg+wjHOv2jD+dBg/RlTgfdZZxnkF3Fbzg1H3bRmpcYmS93WmLzDM3vcGo+NEHm8Y52l+amo91t+zzCyHxJ+MklxMe0trttIm/hhwbprme13xmZlzo1H2VkvoCtnJq/YpB92Lm5SScz36l5K0PzW8MdN8wv5XKaQXQde9jHkXivUD17KtMdLYXm8CmeMcx+n/0cmX+Ffzc2n+nM/McJM3/emfmTxub7+FVH5j0jmM+K0Xx/rObuznnSRru769y8wu1lkSPzKLX9F87Mnw64mdc47ma160Ktx6Tyc2fmP4vVfJex+TOOzKN0Mrt5vSPz6yOYT2Nu5iNnjs7j68bRJPlvJytio3g8UvpqB9+a8rg0UvZ/eacD8xGsiZS+xsE35ZaJNP+TA/NLuThS9se8y4H5MFbLPOvmyRztLq7zqBXuP05WQaPXdvvVkTyuiJTtZlYbzdpI6St5eYzmLlZBo5tf5sA8Widzgrc5MC/liUjprzMv07EzRXfg5kjRJHmGD1mKTwy1U6NxtrGTVXY7llmYf9/S/D4L8wp2scpuy00W5o8l2nyjhfnjlubjrcy7WmW3sTJ/IlbzOEe77Tm3Ge3b2dkq267CTbU0t6ntW9nRKrsD37Iwt53VvhNqL1rjvMsrLc3fjtF8Uqi9aI2zhVdYmtt0Mg9amn/XeL37PO9kMg+Ovpa7I0fXMY05kcV/ZJm9j70iZ/eIsNCfynQL8x9YZh9gbwvzMJttm6J5d2vzGTGa/8ti2b8w1NbyL6p5vOfcZrT/0DJ7v9V1blvhnrEwf9Iy26a2Xx3hVmYqNrPaU5bZe/nlyNnXRLihl8rTFuY/idHcvpP5aWTzHGvzPewZlBAUPphHLcNJcj4viSDewmirbzqqWRLpz36T0ebHdCxhywjZX+ILDrJrODyi+aEYzec6yD7OkZHM+xtt9U3HssyL3418mnOOzK3MRyRwtMd7nbuocIt4aYRsN7X9WMTaPoAfOUiPOquZPMaRjioOiWQ+MPAVMr7NfxuruYtO5mW2iGT+soPsoxycPiN9+GSL5e5Uyo1v9XTkOkfZn/ER4z/7/fzEUfpms/e9ELyCbzjKPhXhlm7TMD8d4ZbuffzYUfqWCOZ/jtF8wkVr3jRG+yk+GqP5X4xr+5Wx1vaJPOkoPcqstsGZufmNzUn81Jm56QaGTg7NpxibT3ZmXma8gaGzxZaF+uZpb+k2/uM2XOQoug6z1wGUOvmudJ5XDd6mle+kbz5PNe82MDd78Dszr7G9gbmLb4lfFPMVMZrXGJmbvebAtfmLTcj84h3tvzcyd13hTB7vKHWyAnie5QZvzSvgfKfZprOai3Ww8yw1Ml/g2Nzk7ZhjHJsvMXi9TxsudJp91Mh8nGPzxY2bN/xRLh9wHF3HilBvGy/kMg/ZVZwS4p3bubzfye2V+qzitSHMuzlunOuoDmk+oQmaPxTK/F7HE2odq4N3MZz9dHVcYs6ZPxzS/IMmZx7unI+PdbRHewo4mGOxVrg/hDIvjPgsbDBVnBzS3O3SQB3hZrXuXO4h+wgnhTJ/wIv5azGbZ37piD/zHqHMX/ViPrGheeo/23Gq9QbA9JzmIg5K+96THA7gK85u4TbkfT4W8JRHWz7M9zyaL+WQAPOv8SWP5vv5eKD5FOstzuk5k8H8pljNH/RqvizQ/EbP5k8Emk9uwuZxnvM4r/N9Gcz9VrjFgea+a/ujgebfs97QH2S+iAMDzedbPI2aib2cyg4B5o94NV/Ir2cwj/40aib2cGrA+nNbz53MQg5Ia57LAVzg0Xw3p6beW8xhaxSgNXqiCIMwFLne/+PXQ1iLbajEIdTiU1yCfHREEYoxGl28Z3+OTdiISuxEDWoB5KM1eqIvBmMImntP/whrsRUVOIQTOIkWKEBH9EE/3IpuWTAvwyZU4D0cx/ELzAdhaJM3L8dGVGAnalLMB6IkC+ZHsAbbUIEPU8yLMVrmWTC/GEd7GTagEjvrmWenwh3GWmytV9v7oB9Ks1LbN2LTBbW9AAXoiWIMws1ZMG84q3VCXxSjFJ2zYL4BZSnm5+bzIWiWBfM12I4KHK5nfhs6ZcF8PcqxHbsbmGenk/kjtqMyNvMyVGAXjqM2h/QeKIQQQgghHOO/XxVCCCGEEM5REyeEEEIIkUDUxAkhhBBCJBA1cUIIIYQQCURNnBBCCCFEAlETJ4QQQgiRQNTECSGEEEIkEDVxQgghhBAJRE2cEEIIIUQCURMnhBBCCJFA1MQJIYQQQiQQNXFCCCGEEAlETZwQQgghRAJREyeEEEIIkUDUxAkhhBBCJBA1cUIIIYQQCURNnBBCCCFEAlETJ4QQQgiRQNTECSGEEEIkkP8BAyrafwRVFloAAAAASUVORK5CYII=" />
+                </svg> --></div>
+    
+    
+        </section>
+    
+    </header>
+
+
+
+    <main >
 
         
 
 
-        <main class="page-main">
 
             <section class="item-of-the-week">
                 <div class="item-of-the-week__wrapper">
@@ -331,61 +338,62 @@
 
             </section>
 
-        </main>
+       
 
         
 
-    </div>
+    </main>
 
 
-
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+    
+            <img src="../source/img/footer__logo-img.png" alt="" width="102" height="34" class="footer__logo-img">
+    
+            <div class="page-footer__social social">
+    
+    
+    
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <div class="social-link--instagram-img"></div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <div class="social-link--facebook-img"></div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <div class="social-link--twitter-img"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="page-footer__copyright copyright">
+                <a href="" class="copyright__link">
+                    <div class="copyright-link__wrapper">
+                        <p class="copyright-link__text"> Разработано </p> <img
+                            src="../source/img/mobile/footer__copyright-logo.png" alt="" width="27" height="34"
+                            class="copyright__logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     
     <script id="__bs_script__">//<![CDATA[
         document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
     //]]></script>
 
+        </div>
 </body>
 
-<footer class="page-footer">
-    <div class="page-footer__wrapper">
 
-        <img src="../source/img/footer__logo-img.png" alt="" width="102" height="34" class="footer__logo-img">
-
-        <div class="page-footer__social social">
-
-
-
-            <ul class="social__list">
-                <li class="social__item">
-                    <a href="" class="social__link">
-                        <div class="social-link--instagram-img"></div>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="" class="social__link">
-                        <div class="social-link--facebook-img"></div>
-                    </a>
-                </li>
-                <li class="social__item">
-                    <a href="" class="social__link">
-                        <div class="social-link--twitter-img"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="page-footer__copyright copyright">
-            <a href="" class="copyright__link">
-                <div class="copyright-link__wrapper">
-                    <p class="copyright-link__text"> Разработано </p> <img
-                        src="../source/img/mobile/footer__copyright-logo.png" alt="" width="27" height="34"
-                        class="copyright__logo">
-                </div>
-            </a>
-        </div>
-    </div>
-</footer>
 
 
 <div class="modal-window">

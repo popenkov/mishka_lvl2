@@ -16,15 +16,17 @@
     display: block;
     box-sizing: border-box;
     /* padding: 35px  45px;  */ 
+    width: 100%;
     border-bottom: 1px solid $grey-border;
    
     font-size: 17px;
-    line-height: get-vw(24px);
+    line-height: 24px;
     color: #000000;
     font-weight: bold;
 
    
-    width: $mobile-width;
+    /* width: $mobile-width; */ //!!!!!!!!!!!!!!!!
+    
     padding: 35px  75px;  
    
 }
