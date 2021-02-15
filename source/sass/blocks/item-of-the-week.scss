@@ -1,5 +1,5 @@
 .item-of-the-week {
-    
+    position: relative;
     min-width: $mobile-width;
     margin: 0 auto;
    
@@ -7,6 +7,8 @@
     
 }
 
+
+  
 .item-of-the-week__wrapper {
     width: $mobile-container;
     
@@ -96,6 +98,10 @@
     color: $dark-grey;
 }
 
+.item-of-the-week__button {
+    margin-bottom: 35px;
+}
+
 
 
 
@@ -166,6 +172,10 @@
 
     .item-of-the-week__price {
         margin-top: auto;
+    }
+
+    .item-of-the-week__button {
+        margin-bottom: 0;
     }
 }
 

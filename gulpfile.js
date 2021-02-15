@@ -11,6 +11,8 @@ const autoprefixer = require('gulp-autoprefixer');
 // Подключаем модуль gulp-clean-css
 const cleancss = require('gulp-clean-css');
 
+const sourcemaps = require('gulp-sourcemaps');
+
 
 // Определяем логику работы Browsersync
 function browsersync() {
@@ -28,8 +30,10 @@ exports.browsersync = browsersync;
 
 function styles() {
 	return src("source/sass/*.scss") // Выбираем источник, где находится файл САСС
+    .pipe(sourcemaps.init()) // !!!! КАРТА КОДА
 	.pipe(sass()) // Преобразуем значение переменной "preprocessor" в функцию
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
+    .pipe(sourcemaps.write('.')) // !!!! КАРТА КОДА
 	.pipe(dest('source/css/')) // Выгрузим результат в папку "source/css/"
 	.pipe(browserSync.stream()) // Сделаем инъекцию в браузер
 }

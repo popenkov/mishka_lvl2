@@ -130,7 +130,7 @@
     .catalog__list-link.catalog--interiors .catalog__link-container,
     .catalog__list-link.catalog--toys .catalog__link-container {
         margin: 0;
-        padding: 9% 10.4%;    /* 30px 35px */
+        padding: get-vw(30px) get-vw(35px);    /* 30px 35px  9% 10.4% */
         
         width: auto;
 
@@ -170,7 +170,7 @@
     .catalog__list-link.catalog--interiors .catalog__link-container,
     .catalog__list-link.catalog--toys .catalog__link-container {
         margin: 0;
-        padding: 9% 10.4%;    /* 30px 35px */
+        padding: 9% 10.4%;    /* 30px 35px  9% 10.4% */
         
         width: auto;
     }

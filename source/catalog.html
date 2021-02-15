@@ -21,8 +21,13 @@
 
 
         <a href="" class="page-header__logo">
-            <img src="../source/img/mobile/mishka-logo-mobile.png" width="86" height="35"
-                alt="Мишка - магазин игрушек и предметов интерьера" class="page-header__logo-image">
+            <a href="" class="page-header__logo">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="../source/img/mishka-logo--desktop.png">
+                    <source media="(min-width: 768px)" srcset="../source/img/mishka-logo--tablet.png">
+                    <img src="../source/img/mobile/mishka-logo-mobile.png" alt="Логотип" class="main-logo__svg">
+                </picture>
+            </a>
         </a>
 
         <button class="page-header__menu-toggle"><img src="../source/img/mobile/menu-button.png" width="20" height="14"
@@ -85,10 +90,15 @@
     <div class="catalog__container">
         <!-- <h1 class="catalog__title"> Каталог товаров</h1> -->
         <section class="catalog-items">
-            <ul class="catalog__list">
+            <ul class="catalog__ul">
 
                 <li class="catalog__item">
-                    <div class="catalog__item-photo catalog__item-photo--bunny"> </div>
+                    <!-- <div class="catalog__item-photo catalog__item-photo--bunny"> </div> -->
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="../source/img/catalog/photo-bunny-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="../source/img/catalog/photo-bunny-tablet.jpg">
+                        <img src="../source/img/catalog/photo-bunny-mobile.jpg" alt="Зайчик-попрыгайчик" class="catalog__item-photo catalog__item-photo--bunny">
+                      </picture>
                     <div class="catalog__description">
                         <div class="catalog__description-container">
                             <h2 class="catalog__item-title"> Зайчик-попрыгайчик</h2>
@@ -102,7 +112,12 @@
                 </li>
 
                 <li class="catalog__item">
-                    <div class="catalog__item-photo catalog__item-photo--basket"> </div>
+                    <!-- <div class="catalog__item-photo catalog__item-photo--basket"> </div> -->
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="../source/img/catalog/photo-basket-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="../source/img/catalog/photo-basket-tablet.jpg">
+                        <img src="../source/img/catalog/photo-basket-mobile.jpg" alt="Корзина для белья" class="catalog__item-photo catalog__item-photo--bunny">
+                      </picture>
                     <div class="catalog__description">
                         <div class="catalog__description-container">
                             <h2 class="catalog__item-title"> Корзина для белья</h2>
@@ -116,7 +131,12 @@
                 </li>
 
                 <li class="catalog__item">
-                    <div class="catalog__item-photo catalog__item-photo--toys-basket"> </div>
+                    <!-- <div class="catalog__item-photo catalog__item-photo--toys-basket"> </div> -->
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="../source/img/catalog/photo-toys-basket-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="../source/img/catalog/photo-toys-basket-tablet.jpg">
+                        <img src="../source/img/catalog/photo-toys-basket-mobile.jpg" alt="Корзина для игрушек" class="catalog__item-photo catalog__item-photo--bunny">
+                      </picture>
                     <div class="catalog__description">
                         <div class="catalog__description-container">
                             <h2 class="catalog__item-title"> Большая корзинка для игрушек</h2>
@@ -136,7 +156,12 @@
         <section class="production-video">
 
             <div class="production-video__video_container">
-                <img class="production-video__video-preview" src="/source/img/catalog/video-mobile.png.jpg" alt="">
+                <!-- <img class="production-video__video-preview" src="/source/img/catalog/video-mobile.png.jpg" alt=""> -->
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="../source/img/catalog/video-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="../source/img/catalog/video-tablet.jpg">
+                    <img src="../source/img/catalog/video-mobile.jpg" alt="видео производства" class="production-video__video-preview">
+                  </picture>
                 <a href="#" class="production-video__play-button">
                     <svg class="production-video__play-button-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="77" viewBox="0 0 101 77">
                         <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
