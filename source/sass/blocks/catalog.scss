@@ -2,37 +2,44 @@
 
     position: relative;
     
-    width: 81%;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
 
 
         width: 86%;
+        
 
+    }
 
-
+    @media (min-width: $desktop-width) {
+        width: $desktop-container;
     }
 }
 
 
 .catalog__list {
-    width: 100%;
-    margin: 0;
+    
+    /* width: 81%; */
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
+    min-width: 320px;
+    width: 81%;
 
 
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         flex-direction: row;
         flex-wrap: nowrap;
+        width: auto;
     }
 
     @media (min-width: $desktop-width) {
         flex-direction: row;
         flex-wrap: nowrap;
+        width: auto;
     }
 }
 
@@ -40,6 +47,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
+    
 
 }
 
@@ -51,6 +60,7 @@
     margin: 22px auto;
 
     display: flex;
+    max-width: 260px;
 
 
     vertical-align: baseline;
@@ -145,7 +155,7 @@
     }
 
     .catalog__list-item {
-        min-width: ($tablet-width / 2);
+        /* min-width: ($tablet-width / 2); */
         width: 100%;
         /* width: 334px; */
     }
@@ -167,11 +177,7 @@
 
 @media (min-width: $desktop-width) {
 
-    .catalog {
-        margin: 0 auto;
-        width: auto;
-    }
-
+  
     .catalog__link-container {}
 
     .catalog__list {
@@ -185,7 +191,7 @@
 
     .catalog__list-item {
         /* width: 525px; */
-        min-width: ($desktop-width / 2);
+        /* min-width: ($desktop-width / 2); */
         width: 100%;
     }
 

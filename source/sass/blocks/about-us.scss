@@ -3,7 +3,18 @@
 }
 .about-us__wrapper {
     width: $mobile-container;
+    width: 81%;
     margin: 0 auto;
+
+    padding-top: 35px;
+}
+
+.about-us__br {
+
+    @media (max-width: $tablet-width) {
+        display: none;
+        
+    }
 }
 
 .about-us__title {
@@ -71,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
     .about-us {
-        max-width: $max-width;
+        max-width: $desktop-container;
     }
     
     .about-us__wrapper {

@@ -1,8 +1,8 @@
 body {
     margin: 0 auto;
-    border: 1px solid yellow;
+
     min-width:  $mobile-width;
-    max-width: $max-width /* + 1600px */;
+    /* max-width: $max-width  */ 
     
     font-family: 'Open Sans', sans-serif;
     
@@ -33,28 +33,4 @@ a {
 .body_container {
     width: 100%;
 
-    @media (min-width: $desktop-width) {
-        /* width: 91%; */
-    }
 }
-
-
-/* @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
-
-   /*  .body_container {
-        width: $tablet-container;
-        border: 1px solid yellow;
-    }
-    *//*
-   
-} 
-
-@media (min-width: $desktop-width) {
-
-    .body_container {
-        max-width: $max-width;
-        border: 1px solid yellow;
-    }
-   
-   
-}  */
