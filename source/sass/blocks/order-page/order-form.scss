@@ -1,3 +1,62 @@
+.order-page__form {
+  width: 81%;
+  min-width: $mobile-container;
+  margin: 0 auto;
+}
+
+.order-form__type-container {
+  display: flex;
+  flex-direction: column;
+}
+
+  //РАДИОКНОПКИ
+
+  //убираю радио стандартные
+.order-form__type-container input[type="radio"]:checked, 
+.order-form__type-container input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+//отступы для новой радиокнопки (label)
+.order-form__type-label{
+  display: inline-block;
+    position: relative;
+    padding-left: 43px;
+    margin-bottom: 30px;
+        
+}
+
+
+.order-form__type-container input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+   
+/* ДЕЛАЮ ГАЛКУ АФТЕРОМ */
+
+
+.order-form__type-container input[type="radio"]:checked + label::after {
+
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+ /*  border-bottom: 4px solid #ffffff;
+  border-left: 4px solid #ffffff; */
+  left: 0;
+  top: -1px;
+   
+} 
+
+
 .order-form {
  
         padding-top: 22px;

@@ -161,10 +161,6 @@
 
     .page-header__background-image {
         max-width: $desktop-container;
-        background-color:red;
-        /* width: $desktop-width - 100px; */
-        /* transform: translateX(-50px); */
-       /*  height: 627px;  */
         background-image: url('../img/main-background-desktop.jpg');
         background-repeat: no-repeat;
         position: relative;
@@ -196,7 +192,7 @@
 
 
 .page-header {
-    /* max-width: $max-width; */
+    
 }
  
 .catalog-header__background {

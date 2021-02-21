@@ -100,20 +100,21 @@
                 заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <fieldset class="order-form__type-section">
                 <legend class="order-form__legend">Тип </legend>
-                <label><input type="radio" name="type" value="accessoires">Аксессуар для интерьера<label>
-                        <label><input type="radio" name="type" value="toys">Детская игрушка<label>
+                <div class="order-form__type-container">
+                    <input type="radio" name="type" id="accessoires" value="accessoires" class="order-form__type-input"><label for="accessoires" class="order-form__type-label">Аксессуар для интерьера</label>
+                    <input type="radio" name="type" id="toys" value="toys" class="order-form__type-input"><label for="toys" class="order-form__type-label">Детская игрушка</label>
+                </div>
 
             </fieldset>
 
             <fieldset class="order-form__color-section">
                 <legend class="order-form__legend">Цвет </legend>
-                <label><input type="checkbox" name="color" value="white" checked>Белый<label>
-                        <label><input type="checkbox" name="color" value="grey" checked>Серый<label>
-                                <label><input type="checkbox" name="color" value="tiffany"> «Тиффани»<label>
-                                        <label><input type="checkbox" name="color" value="black">Черный<label>
-                                                <label><input type="checkbox" name="color" value="pink">Розовый<label>
-                                                        <label><input type="checkbox" name="color"
-                                                                value="orange">Оранжевый<label>
+                <label><input type="checkbox" name="color" value="white" checked>Белый</label>
+                <label><input type="checkbox" name="color" value="grey" checked>Серый</label>
+                <label><input type="checkbox" name="color" value="tiffany"> «Тиффани»</label>
+                <label><input type="checkbox" name="color" value="black">Черный</label>
+                <label><input type="checkbox" name="color" value="pink">Розовый</label>
+                <label><input type="checkbox" name="color" value="orange">Оранжевый</label>
             </fieldset>
 
             <fieldset class="order-form__name-section">
