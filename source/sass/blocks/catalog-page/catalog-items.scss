@@ -6,6 +6,8 @@
     max-width: 1050px;
 
 
+
+
     
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -23,6 +25,45 @@
         margin-bottom: 105px;
         }
 }
+
+
+.catalog-items__zigzak {
+    display: none;
+    
+   
+  
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        display: block;
+        
+        height: 24px;
+        margin-bottom: -10px;
+        width: 100%;
+
+        
+       
+
+
+        background-image: url(../img/bg-zigzag-fill.svg);
+        background-repeat: repeat-x;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: block;
+       
+        margin-bottom: -17px;
+    height: 34px;
+    width: 100%;
+    
+          
+       
+
+
+        background-image: url(../img/bg-zigzag-fill.svg);
+        background-repeat: repeat-x;
+    }
+}
+
 
 .catalog__ul {
     
@@ -187,18 +228,3 @@
     border: none;
 }
 
-.catalog__item-photo--bunny {
-    background-image: url(/source/img/catalog/photo-bunny-mobile.png.jpg);
-    
-    
-}
-
-.catalog__item-photo--basket {
-    background-image: url(/source/img/catalog/photo-bunny-mobile.png.jpg);
-    
-}
-
-.catalog__item-photo--toys-basket {
-    background-image: url(/source/img/catalog/photo-bunny-mobile.png.jpg);
-    
-}

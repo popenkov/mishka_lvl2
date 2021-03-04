@@ -13,6 +13,8 @@
     margin: 0 auto;
     height: 80px;
     position: relative;
+    border-bottom: 1px solid $grey-border;
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width)   {
       
@@ -43,6 +45,27 @@
     top: 50%;
     margin-top: -17px;
 
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+       
+            position: static;
+            left: 0;
+            margin: 0;
+            top: 0;
+            margin-right: 200px;
+       
+    }
+
+    @media (min-width: $desktop-width) {
+            
+             position: absolute;
+          
+         
+            top: 50%;
+    margin-top: -37px;
+            
+        
+    }
+
 }
 
 .page-header__menu-toggle {
@@ -55,46 +78,10 @@
     border: none;
 }
 
-.page-header__background-image {
-    
-    width: $mobile-width;
-    background-size: cover;
-    
-    margin: 0 auto;
-
-    border-top: 1px solid $grey-border;
-
-    /* height: 140%; */
-    min-height: 282px;
-/*     background-image: url('../img/mobile/catalog-header__img.jpg');
-    background-repeat: no-repeat; */
 
 
-    
 
 
-  background-image: url("../img/mobile/catalog-header__img.jpg");
-  background-size: image-size("../img/mobile/catalog-header__img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-
-
-    position: relative;
-
-    
-}
-
-
-.page-header__background-title {
-    width: $mobile-container;
-    margin: 0 auto;
-    padding-top: 25%;
-    
-    text-align: center;
-
-    font-size: get-vw(27px);
-    line-height: get-vw(30px);
-}
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width)   {
     .page-header {
@@ -105,125 +92,38 @@
     .page-header__menu-toggle {
         display: none;
     }
-     
-    .page-header__logo {
-        position: static;
-        left: 0;
-        margin: 0;
-        top: 0;
-        margin-right: 200px;
-    }
-
-    .page-header__background-image {
-        /* background-image: url('../img/main-background-tablet768-746.png'); */
-        background-image: url('../img/main-background-desktop.jpg');
-        background-position: top center;
-        min-width: $tablet-width;
-        width: 100%;
-        background-size: cover;
-        
-        background-repeat: no-repeat;
-        position: relative;
-        
-    }
-
-    .page-header__background-title {
-        width: auto;
-        padding-top: 25%;
-        padding-bottom: 25%;
-        /* font-size: 43px; */
-        line-height: get-vw(50px);
-        font-size: get-vw(43px);
-    }
+       
    
 } 
 
+
+
 @media (min-width: $desktop-width) {
     .page-header {
-        min-width: $desktop-width;   
+        /* min-width: $desktop-width;  */  
         /* max-width: $max-width; */
     
     }
     
 
-    .page-header__logo {
-        position: absolute;
-        left: 50%;
-        margin-left: -43px;
-        top: 50%;
-        margin-top: -17px;
     
-    }
 
     .page-header__menu-toggle {
         display: none;
     }
 
-    .page-header__background-image {
-        max-width: $desktop-container;
-        background-image: url('../img/main-background-desktop.jpg');
-        background-repeat: no-repeat;
-        position: relative;
-        
+    
 
-        background-position: top center;
-        min-width: $desktop-width;
-        width: 100%;
-        background-size: cover;
-                
-    }
-
-    .page-header__background-title {
-        width: auto;
-        margin: 0 auto;
-        padding-top: 15%;
-        padding-bottom: 25%;
-        font-size: 53px;
-        
-        line-height: 57px;
-    }
+    
    
 }
 
 
-/////////////////////////////////////////////////////////////
 
 
 
 
-.page-header {
-    
-}
- 
-.catalog-header__background {
-    background-color: $grey-background;
-    border-top: 1px solid $grey-border;
-}
-
-.catalog-header__background-container {
-    height: 177px;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        height: 225px;
-    }
-
-    @media (min-width: $desktop-width) {
-        height: 255px;
-    }
-    
-}
 
 
-.catalog-header__background-title {
-    text-align: center;
-    padding-top: 20%;
-  
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        padding-top: 112px;
-    }
 
-    @media (min-width: $desktop-width) {
-        padding-top: 112px;
-    }
-}
 

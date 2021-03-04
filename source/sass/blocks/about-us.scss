@@ -2,7 +2,7 @@
     margin: 0 auto;
 }
 .about-us__wrapper {
-    /* width: $mobile-container; */
+    
     width: 81%;
     margin: 0 auto;
 
@@ -101,7 +101,7 @@
 
     .about-us__features-list {
         margin-left: 175px;
-       /*  width: 59%; */ //648px / 1250px = 51.8%
+       
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -109,7 +109,7 @@
     }
 
     .about-us__features-item {
-        width: 44%; // 299px / 1250px поставил больше
+        width: 44%; 
         
         margin-top: 60px;
     }

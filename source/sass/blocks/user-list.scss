@@ -58,7 +58,15 @@
         position: static;
         padding: 33px;
         border-left: 1px solid $grey-border;
+        & svg {fill: rgba(0,0,0,.2);
+        }
+
+        &:hover {
+            fill: red;
+        }
     }
+
+
 
     .user-list__link--shopping_cart {
         display: block;

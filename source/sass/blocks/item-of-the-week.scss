@@ -55,7 +55,7 @@
     @media (min-width: $desktop-width) {
 
       
-            width: 76%; // 875 / 1150
+            width: 83%; 
      
              min-height: 636px;
              margin: 0;
@@ -105,6 +105,10 @@
     font-size: 15px;
     line-height: 24px;
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        margin-top: 0;
+    }
 }
 
 
@@ -143,7 +147,8 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
        
         margin: 0;
-        margin-top: auto;
+        /* margin-top: auto; */
+        margin-top: 65px;
         width: 43%; // 333px / 768
         
     }
@@ -155,6 +160,17 @@
         height: 636px;
         margin: 0;
         margin-left: auto;
+    }
+}
+
+.item-of-the-week__photo-img {
+    
+    width: 100%;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+       /* width: 334px; */
+      
+        
     }
 }
 
@@ -215,6 +231,7 @@
         width: 37.8%; // делим  ширину блока 291px на ширину окна 768px 
         display: flex;
         flex-direction: column;
+        margin-top: 65px;
 
     }
 

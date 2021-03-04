@@ -13,6 +13,7 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
             width: $mobile-container; ////
            
+            border: 1px solid red;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -20,6 +21,7 @@
 
         @media (min-width: $desktop-width) {
             width: $mobile-container; 
+            border: 1px solid red;
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -37,11 +39,11 @@
     border: 1px solid $grey-border;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width)  {
-        width: auto; 
+        /* width: auto;  */
     }
 
         @media (min-width: $desktop-width) {
-            width: auto;
+            /* width: auto; */
             border: none;
         }
 }

@@ -1,13 +1,16 @@
 body {
-    margin: 0 auto;
-
-    min-width:  $mobile-width;
-    /* max-width: $max-width  */ 
+    
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    min-width: 320px;
+    
     
     font-family: 'Open Sans', sans-serif;
-    
+   
       
 }
+
 
 
 
@@ -22,8 +25,7 @@ body {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+   
 }
 
 a {
@@ -31,6 +33,6 @@ a {
 }
 
 .body_container {
-    width: 100%;
+  
 
 }
