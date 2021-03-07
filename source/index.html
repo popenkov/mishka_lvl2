@@ -37,8 +37,13 @@
                 </a>
 
 
-                <button class="page-header__menu-toggle"><img src="../source/img/mobile/menu-button.png" width="20"
-                        height="14" alt="" class="page-header__menu-image"></button>
+                <button class="page-header__menu-toggle">
+                        
+                        <svg class="page-header__menu-image" width="20" height="14">
+                            <use xlink:href="/source/img/icons/sprite-icons.svg#menu-button"></use>
+                        </svg>
+
+                    </button>
 
                 <nav class="main-nav">
                     <div class="main-nav__wrapper">
@@ -57,27 +62,25 @@
                         <ul class="main-nav__list user-list">
                             <li class="user-list__item  user-list__list--search">
                                 <a class="user-list__link user-list__link--search" href="">
-                                  <!-- <img class="user-list__link--img user-list__link--search-img" src="../source/img/icons/site-list__link--search.svg" width="18" height="18" alt="Кнопка поиска"> -->
+                                    
+                                    <svg class="user-list__link--img user-list__link--search-img" height="18" width="18">
+                                        <use xlink:href="/source/img/icons/sprite-icons.svg#header--search"></use>
+                                    </svg>
 
-                                  <object type="image/svg+xml" data="../source/img/icons/site-list__link--search.svg" class="user-list__link--img user-list__link--search-img" height="18" width="18">
-                                  </object>
 
-    
 
-                                <span class="user-list__link--search-text">Поиск по сайту</span>
+                                    <span class="user-list__link--search-text">Поиск по сайту</span>
                                 </a>
                             </li>
 
                             <li class="user-list__item user-list__list--shopping_cart">
-                                <a class="user-list__link user-list__link--shopping_cart " href=""> 
-                                    <!-- <img class="user-list__link--img user-list__link--shopping_cart-img" 
-                                    height="18" width="22" src="../source/img/icons/site-list__link--shopping_cart.svg" alt="Корзина"> -->
-
-                                    <object type="image/svg+xml" data="../source/img/icons/site-list__link--shopping_cart.svg" class="user-list__link--img user-list__link--shopping_cart-img" height="18" width="22">
-                                    </object>
+                                <a class="user-list__link user-list__link--shopping_cart " href="">
+                                    <svg class="user-list__link--img user-list__link--shopping_cart-img" height="18" width="22">
+                                        <use xlink:href="/source/img/icons/sprite-icons.svg#header--cart"></use>
+                                    </svg>
 
                                     Корзина: пока пуста
-                                    
+
                                 </a>
                             </li>
 
@@ -97,12 +100,12 @@
             </div>
 
 
-           
 
 
 
 
-            
+
+
 
         </header>
 
@@ -112,46 +115,56 @@
 
             <section class="index-catalog">
                 <div class="index-catalog__container">
-                    
-                        <h2 class="visually-hidden">Каталог товаров</h2>
-    
-                        <h2 class="index-catalog__background-title">Милые штуки ручной <br> работы для дома</h2>
-                    
-    
 
-                <ul class="index-catalog__list">
-                    <li class="index-catalog__list-item">
-                        <a href="" class="index-catalog__list-link catalog--interiors">
-                            <div class="index-catalog__link-container">
-                                <h3 class="index-catalog__link-title">Предметы <br> интерьера</h3>
-                                <img src="../source/img/mobile/catalog--lamp.png" alt="" width="40" height="62"
-                                    class="index-catalog__image catalog__image--lamp">
-                            </div>
-                        </a>
-                    </li>
+                    <h2 class="visually-hidden">Каталог товаров</h2>
 
-                    <li class="index-catalog__list-item">
-                        <a href="" class="index-catalog__list-link catalog--toys">
-                            <div class="index-catalog__link-container">
-                                <h3 class="index-catalog__link-title">Детские <br> игрушки</h3>
-                                <img src="../source/img/mobile/catalog--toy.png" alt="" width="60" height="60"
-                                    class="index-catalog__image catalog__image--constructor">
-                            </div>
-                        </a>
-                    </li>
+                    <h2 class="index-catalog__background-title">Милые штуки ручной <br> работы для дома</h2>
 
-                    
 
-                </ul>
-                <div class="index-catalog__zigzak">  </div>
-                
 
-            </div>
-    
-    
-                    
-    
-        
+                    <ul class="index-catalog__list">
+                        <li class="index-catalog__list-item">
+                            <a href="" class="index-catalog__list-link catalog--interiors">
+                                <div class="index-catalog__link-container">
+                                    <h3 class="index-catalog__link-title">Предметы <br> интерьера</h3>
+
+                                
+
+                                        <svg class="index-catalog__image catalog__image--lamp" width="40" height="62">
+                                            <use xlink:href="/source/img/icons/sprite-icons.svg#catalog--lamp"></use>
+                                        </svg>
+
+
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="index-catalog__list-item">
+                            <a href="" class="index-catalog__list-link catalog--toys">
+                                <div class="index-catalog__link-container">
+                                    <h3 class="index-catalog__link-title">Детские <br> игрушки</h3>
+                                    <!-- <img src="../source/img/mobile/catalog--toy.png" alt="" width="60" height="60"
+                                        class="index-catalog__image catalog__image--constructor"> -->
+
+                                        <svg class="index-catalog__image catalog__image--constructor" width="60" height="60">
+                                            <use xlink:href="/source/img/icons/sprite-icons.svg#catalog--toy"></use>
+                                        </svg>
+                                </div>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                    <div class="index-catalog__zigzak"> </div>
+
+
+                </div>
+
+
+
+
+
 
 
             </section>
@@ -194,23 +207,27 @@
                         <a href="" class="item-of-the-week__button button">Заказать</a>
                     </div>
 
-                    <div class="item-of-the-week__photo">  
-                        
-                            <picture>
-                                <source media="(min-resolution: 2dppx) and (min-width: 1150px)" srcset="../source/img/content/triple-set-desktop@2x.jpg"> 
-                                <source media="(min-width: 1150px)" srcset="../source/img/content/triple-set-desktop@1x.jpg"> 
-                                <source media="(min-resolution: 2dppx) and (min-width: 768px)" srcset="../source/img/content/triple-set-tablet@2x.jpg"> 
-                                <source media="(min-width: 768px)" srcset="../source/img/content/triple-set-tablet@1x.jpg"> 
-                                <source media="(min-resolution: 2dppx)" srcset="../source/img/content/triple-set-mobile@2x.jpg">
-                                <img class="item-of-the-week__photo-img" src="../source/img/content/triple-set-mobile@1x.jpg" 
-                                  alt="Вязаная корзинка «Тиффани»">
-                              </picture>
-                        </div>
+                    <div class="item-of-the-week__photo">
+
+                        <picture>
+                            <source media="(min-resolution: 2dppx) and (min-width: 1150px)"
+                                srcset="../source/img/content/triple-set-desktop@2x.jpg">
+                            <source media="(min-width: 1150px)"
+                                srcset="../source/img/content/triple-set-desktop@1x.jpg">
+                            <source media="(min-resolution: 2dppx) and (min-width: 768px)"
+                                srcset="../source/img/content/triple-set-tablet@2x.jpg">
+                            <source media="(min-width: 768px)" srcset="../source/img/content/triple-set-tablet@1x.jpg">
+                            <source media="(min-resolution: 2dppx)"
+                                srcset="../source/img/content/triple-set-mobile@2x.jpg">
+                            <img class="item-of-the-week__photo-img"
+                                src="../source/img/content/triple-set-mobile@1x.jpg" alt="Вязаная корзинка «Тиффани»">
+                        </picture>
+                    </div>
 
                 </div>
 
                 <div class="item-of-the-weak__wave-img  wave-img"></div>
-              
+
             </section>
 
 
@@ -220,25 +237,55 @@
                     <h2 class="visually-hidden">Наши преимущества</h2>
                     <h2 class="about-us__title">Коротко о нас:</h2>
                     <ul class="about-us__features-list">
-                        <li class="about-us__features-item"> <img src="../source/img/mobile/about-us--flower.png"
-                                width="32" height="37" alt="" class="about-us__icon about-us--flower"> Экологически <br
-                                class="about-us__br">
+                        <li class="about-us__features-item">
+                            
+                            <svg class="about-us__icon about-us--flower" width="35" height="38">
+                                <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-flower"></use>
+                            </svg>
+                            Экологически <br class="about-us__br">
                             чистые материалы</li>
-                        <li class="about-us__features-item"><img src="../source/img/mobile/about-us--money.png"
-                                width="47" height="27" alt="" class="about-us__icon about-us--money">Скандинавский стиль
-                            по российской цене</li>
-                        <li class="about-us__features-item"><img src="../source/img/mobile/about-us--heart.png"
-                                width="34" height="27" alt="" class="about-us__icon about-us--heart">Увеличивает лайки
+                        <li class="about-us__features-item">
+
+                            <svg class="about-us__icon about-us--money" width="47" height="27">
+                                <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-money"></use>
+                            </svg>
+
+                            Скандинавский стиль по российской цене</li>
+                        <li class="about-us__features-item">
+
+                            <svg class="about-us__icon about-us--heart" width="33" height="28">
+                                <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-heart"></use>
+                            </svg>
+
+                            Увеличивает лайки
                             <br class="about-us__br"> на фотографиях</li>
-                        <li class="about-us__features-item"><img src="../source/img/mobile/about-us--clew.png"
-                                width="35" height="34" alt="" class="about-us__icon about-us--clew">Связано вручную с
-                            любовью и умилением <span class="about-us--clew"></span> </li>
-                        <li class="about-us__features-item"><img src="../source/img/mobile/about-us--rocket.png"
-                                width="55" height="23" alt="" class="about-us__icon about-us--rocket">Поддержка
+                        <li class="about-us__features-item">
+
+                            <svg class="about-us__icon about-us--clew" width="35" height="34">
+                                <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-clew"></use>
+                            </svg>
+
+                            Связано вручную с любовью и умилением <span class="about-us--clew"></span> </li>
+
+
+
+                        <li class="about-us__features-item">
+
+                                <svg class="about-us__icon about-us--rocket" width="54" height="23">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-rocket"></use>
+                                </svg>
+
+                            Поддержка
                             отечественного производителя</li>
-                        <li class="about-us__features-item"><img src="../source/img/mobile/about-us--gift.png"
-                                width="33" height="32" alt="" class="about-us__icon about-us--gift">Поставляется в
-                            <br class="about-us__br">подарочной упаковке</li>
+                        <li class="about-us__features-item">
+
+                            <svg class="about-us__icon about-us--clew" width="33" height="32" class="about-us__icon about-us--gift">
+                                <use xlink:href="/source/img/icons/sprite-icons.svg#about-us-gift"></use>
+                            </svg>
+
+                            Поставляется в <br class="about-us__br">подарочной упаковке
+
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -265,12 +312,18 @@
                     </div>
 
                     <p class="reviews__toggles slider__toggles">
-                        <button class="slider__toggle--before" type="button"> <img
-                                src="../source/img/mobile/huge-arrow-left.png" width="50" height="26"
-                                alt="Предыдущий отзыв"> </button>
-                        <button class="slider__toggle--next" type="button"><img
-                                src="../source/img/mobile/huge-arrow-right.png" width="50" height="26"
-                                alt="Следующий отзыв"></button>
+                        <button class="slider__toggle--before" type="button"> 
+                                <svg class="" width="50" height="26" class="">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#arrow-left"></use>
+                                </svg>
+                            
+                            </button>
+                        <button class="slider__toggle--next" type="button">
+                                <svg class="" width="50" height="26" class="">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#arrow-right"></use>
+                                </svg>
+                            
+                            </button>
 
                     </p>
 
@@ -284,8 +337,12 @@
 
             <section class="contacts">
                 <div class="contacts__wrapper">
-                    <img src="../source/img/contacts__flag-img.png" width="47" height="81" alt=""
-                        class="contacts__flag-img">
+                 
+                  <svg width="47" height="81" class="contacts__flag-img">
+                            <use xlink:href="/source/img/icons/sprite-icons.svg#contacts__flag"></use>
+                        </svg>    
+
+
                     <div class="contacts__text">
                         <h2 class="contacts__title">Контакты</h2>
 
@@ -312,11 +369,13 @@
 
                     <div class="contacts__map-container">
                         <picture>
-                            <source media="(min-width: 1150px) and (min-resolution: 2dppx)" srcset="/source/img/content/map-desktop@1x.jpg">
+                            <source media="(min-width: 1150px) and (min-resolution: 2dppx)"
+                                srcset="/source/img/content/map-desktop@1x.jpg">
                             <source media="(min-width: 1150px)" srcset="/source/img/content/map-desktop@1x.jpg">
-                            <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="/source/img/content/map-tablet@2x.jpg">
+                            <source media="(min-width: 768px) and (min-resolution: 2dppx)"
+                                srcset="/source/img/content/map-tablet@2x.jpg">
                             <source media="(min-width: 768px)" srcset="/source/img/content/map-tablet@1x.jpg">
-                            <source media="(min-resolution: 2dppx)" srcset="/source/img/content/map-mobile@2x.jpg">   
+                            <source media="(min-resolution: 2dppx)" srcset="/source/img/content/map-mobile@2x.jpg">
                             <img src="/source/img/content/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург,
                             ул. Большая
                             Конюшенная,
@@ -342,7 +401,11 @@
         <footer class="page-footer">
             <div class="page-footer__wrapper">
 
-                <img src="../source/img/footer__logo-img.png" alt="" width="102" height="34" class="footer__logo-img">
+                
+
+                <svg width="102" height="34" class="footer__logo-img">
+                    <use xlink:href="/source/img/icons/sprite-icons.svg#footer__logo"></use>
+                </svg>
 
                 <div class="page-footer__social social">
 
@@ -351,17 +414,27 @@
                     <ul class="social__list">
                         <li class="social__item">
                             <a href="" class="social__link">
-                                <div class="social-link--instagram-img"></div>
+                                
+                                <svg class="social-link--instagram-img" width="22" height="22">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#instagram-img"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__link">
-                                <div class="social-link--facebook-img"></div>
+                               
+                                <svg class="social-link--facebook-img" width="15" height="28">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#facebook-img"></use>
+                                </svg>
+
+
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__link">
-                                <div class="social-link--twitter-img"></div>
+                                <svg class="social-link--twitter-img" width="24" height="20">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#twitter-img"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -370,9 +443,11 @@
                 <div class="page-footer__copyright copyright">
                     <a href="" class="copyright__link">
                         <div class="copyright-link__wrapper">
-                            <p class="copyright-link__text"> Разработано </p> <img
-                                src="../source/img/mobile/footer__copyright-logo.png" alt="" width="27" height="34"
-                                class="copyright__logo">
+                            <p class="copyright-link__text"> Разработано </p> 
+
+                                <svg class="copyright__logo" height="34" width="27">
+                                    <use xlink:href="/source/img/icons/sprite-icons.svg#copyright__logo"></use>
+                                </svg>
                         </div>
                     </a>
                 </div>

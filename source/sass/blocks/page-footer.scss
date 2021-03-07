@@ -21,6 +21,8 @@
 
 
 .page-footer__wrapper{
+    border: 1px solid red; // заменить спэйс битвин на проценты
+
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     
 
@@ -29,7 +31,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             padding-top: 50px;
             padding-bottom: 50px;
         }
@@ -41,7 +43,7 @@
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
-                align-items: baseline;
+                align-items: center;
                 padding-top: 50px;
                 padding-bottom: 50px;
             }
