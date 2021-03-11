@@ -8,7 +8,7 @@
 
 
 
-    
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         min-width: $tablet-width;
@@ -20,7 +20,7 @@
 
     @media (min-width: $desktop-width) {
         /* min-width: $desktop-width; */
-        
+
         margin-top: 110px;
         margin-bottom: 105px;
         }
@@ -29,19 +29,19 @@
 
 .catalog-items__zigzak {
     display: none;
-    
-   
-  
+
+
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         display: block;
-        
+
         height: 24px;
         margin-bottom: -10px;
         width: 100%;
 
-        
-       
+
+
 
 
         background-image: url(../img/bg-zigzag-fill.svg);
@@ -50,13 +50,13 @@
 
     @media (min-width: $desktop-width) {
         display: block;
-       
+
         margin-bottom: -17px;
     height: 34px;
     width: 100%;
-    
-          
-       
+
+
+
 
 
         background-image: url(../img/bg-zigzag-fill.svg);
@@ -66,7 +66,7 @@
 
 
 .catalog__ul {
-    
+
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -75,22 +75,22 @@
     justify-content: space-around;
 
     @media (min-width: $desktop-width) {
-        /* width: 86% ; */ //1050   ÷   1250 
-        
+        /* width: 86% ; */ //1050   ÷   1250
+
         flex-direction: row;
         justify-content: space-between;
     }
-}  
+}
 
 .catalog__item {
     width: 260px; //260px / 320 // было 81%
-    
+
     margin: 0;
     padding: 0;
     /* margin: 0 auto; */
     margin-bottom: 30px;
 
-  
+
 
     list-style: none;
 
@@ -121,11 +121,11 @@
 
 
 .catalog__item-photo {
-    background-color: red;
+
     height: 195px;
     width: 260px;
 
-   
+
     padding: 0;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -148,9 +148,9 @@
     margin: 0 auto;
 
     width: 79%; //209/260 = 79% измеряется от ширины родителя
-    
+
     min-height: 200px;
-    
+
 
     display: flex;
     flex-direction: column;
@@ -165,10 +165,10 @@
         padding: 0 29px;
         min-height: 0;
     }
-    
+
 }
 .catalog__description-container  {
-    
+
 }
 
 .catalog__item-title {
@@ -185,38 +185,38 @@
     margin: 0;
     padding: 0;
     margin-top: 24px;
-    
+
     color: $dark-grey;
     font-size: 13px;
     line-height: 30px;
-   
+
 }
 
 .catalog__price-container {
-    
 
-    
+
+
     margin: 0;
     padding: 0;
     margin: 0 auto;
     margin-top: auto;
     padding-top: 30px;
     margin-bottom: 30px;
-    
+
 
     width: 100%;
     border-top: 1px solid $grey-border;
 
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 .catalog__item-price {
     margin: 0;
     padding: 0;
 
-    
+
 }
 
 .catalog__add-to-cart-button {

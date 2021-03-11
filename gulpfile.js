@@ -1,53 +1,294 @@
-// Определяем переменную "preprocessor"
-/* let preprocessor = 'sass';  */
+const gulp = require("gulp");
 
-const { src, dest, parallel, series, watch } = require('gulp'); 
+const plumber = require("gulp-plumber");
 
-const browserSync = require('browser-sync').create();
-// Подключаем модули gulp-sass 
-const sass = require('gulp-sass');     
-// Подключаем Autoprefixer
-const autoprefixer = require('gulp-autoprefixer');    
-// Подключаем модуль gulp-clean-css
-const cleancss = require('gulp-clean-css');
+const sourcemap = require("gulp-sourcemaps");
 
-const sourcemaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
 
+sass.compiler = require('node-sass');
 
-// Определяем логику работы Browsersync
-function browsersync() {
-    browserSync.init({ // Инициализация Browsersync
-        /* server: { baseDir: 'source/' }, */  // Указываем папку сервера
-        notify: false, // Отключаем уведомления
-        online: true // Режим работы: true или false
-    })
+const postcss = require("gulp-postcss");
 
-    
+const autoprefixer = require("autoprefixer");
+
+const csso = require("postcss-csso");
+
+const rename = require("gulp-rename");
+
+const htmlmin = require("gulp-htmlmin");
+
+const uglify = require("gulp-uglify");
+
+const imagemin = require("gulp-imagemin");
+
+const webp = require("gulp-webp");
+
+const svgstore = require("gulp-svgstore");
+
+const del = require("del");
+
+const sync = require("browser-sync").create();
+
+const ghPages = require('gulp-gh-pages');
+
+// Styles
+
+const styles = () => {
+
+return gulp.src("source/sass/style.scss")
+
+.pipe(plumber())
+
+.pipe(sourcemap.init())
+
+.pipe(sass().on('error', sass.logError))
+
+.pipe(postcss([
+
+autoprefixer(),
+
+csso()
+
+]))
+
+.pipe(rename("style.min.css"))
+
+.pipe(sourcemap.write("."))
+
+.pipe(gulp.dest("build/css"))
+
+.pipe(sync.stream());
+
 }
 
-// Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
-exports.browsersync = browsersync;
-
-function styles() {
-	return src("source/sass/*.scss") // Выбираем источник, где находится файл САСС
-    .pipe(sourcemaps.init()) // !!!! КАРТА КОДА
-	.pipe(sass()) // Преобразуем значение переменной "preprocessor" в функцию
-	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
-    .pipe(sourcemaps.write('.')) // !!!! КАРТА КОДА
-	.pipe(dest('source/css/')) // Выгрузим результат в папку "source/css/"
-	.pipe(browserSync.stream()) // Сделаем инъекцию в браузер
-}
-
-// Экспортируем функцию styles() в таск styles
 exports.styles = styles;
 
-function startwatch() {
+// HTML
 
-// Мониторим файлы препроцессора на изменения
-watch("source/sass/**/*.scss", styles);
-// Мониторим файлы HTML на изменения
-watch('source/**/*.html').on('change', browserSync.reload);
- 
+const html = () => {
+
+return gulp.src("source/*.html")
+
+.pipe(htmlmin({ collapseWhitespace: true }))
+
+.pipe(gulp.dest("build"));
+
 }
 
-exports.default = parallel(styles, browsersync, startwatch);
+// Scripts
+
+const scripts = () => {
+
+return gulp.src("source/js/script.js")
+
+.pipe(uglify())
+
+.pipe(rename("script.min.js"))
+
+.pipe(gulp.dest("build/js"))
+
+.pipe(sync.stream());
+
+}
+
+exports.scripts = scripts;
+
+// Images
+
+const images = () => {
+
+return gulp.src("source/img/**/*.{png,jpg,svg}")
+
+.pipe(imagemin([
+
+imagemin.mozjpeg({progressive: true}),
+
+imagemin.optipng({optimizationLevel: 3}),
+
+imagemin.svgo()
+
+]))
+
+.pipe(gulp.dest("build/img"))
+
+}
+
+exports.images = images;
+
+// WebP
+
+const createWebp = () => {
+
+return gulp.src("source/img/**/*.{jpg,png}")
+
+.pipe(webp({quality: 90}))
+
+.pipe(gulp.dest("build/img"))
+
+}
+
+exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+
+return gulp.src("source/img/icons/*.svg")
+
+.pipe(svgstore())
+
+.pipe(rename("sprite.svg"))
+
+.pipe(gulp.dest("build/img"));
+
+}
+
+exports.sprite = sprite;
+
+// Copy
+
+const copy = (done) => {
+
+gulp.src([
+
+"source/fonts/*.{woff2,woff}",
+
+"source/*.ico",
+
+"source/img/**/*.{jpg,png,svg}",
+
+], {
+
+base: "source"
+
+})
+
+.pipe(gulp.dest("build"))
+
+done();
+
+}
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+
+return del("build");
+
+};
+
+// Server
+
+const server = (done) => {
+
+sync.init({
+
+server: {
+
+baseDir: "build"
+
+},
+
+cors: true,
+
+notify: false,
+
+ui: false,
+
+});
+
+done();
+
+}
+
+exports.server = server;
+
+// Reload
+
+const reload = done => {
+
+sync.reload();
+
+done();
+
+}
+
+
+// Watcher
+
+const watcher = () => {
+
+gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+
+gulp.watch("source/js/script.js", gulp.series(scripts));
+
+gulp.watch("source/*.html", gulp.series(html, reload));
+
+}
+
+// Build
+
+const build = gulp.series(
+
+clean,
+
+gulp.parallel(
+
+styles,
+
+html,
+
+scripts,
+
+sprite,
+
+copy,
+
+images,
+
+createWebp
+
+));
+
+exports.build = build;
+// Default
+
+exports.default = gulp.series(
+
+  clean,
+
+  gulp.parallel(
+
+  styles,
+
+  html,
+
+  scripts,
+
+  sprite,
+
+  copy,
+
+  createWebp
+
+  ),
+
+  gulp.series(
+
+  server,
+
+  watcher
+
+  ));
+
+
+  gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+      .pipe(ghPages());
+  });
+
+
+  

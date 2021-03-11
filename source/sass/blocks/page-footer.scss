@@ -2,32 +2,25 @@
    width: 100%;
     margin: 0 auto;
   min-width: $mobile-width;
-    
+
     background-color: #f1f1f1;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width)   {
         min-width: $tablet-width;
- 
+
     }
 
-    @media (min-width: $desktop-width) {
-        
-            /* min-width: $desktop-width; */
-            /* max-width: $max-width; */
-           
-           
-        }
 }
 
 
 .page-footer__wrapper{
-    border: 1px solid red; // заменить спэйс битвин на проценты
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    
+
 
             width: 86%;
-            
+
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -37,7 +30,7 @@
         }
 
         @media (min-width: $desktop-width) {
-    
+
             max-width: $desktop-container;
                 width: 86%;
                 margin: 0 auto;
@@ -49,33 +42,38 @@
             }
 }
 
+
+
 .footer__logo-img {
     display: none;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: block;
+      padding-right: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+          display: block;
+          padding-right: 82px;
+  }
 }
 
 .page-footer__copyright {
     padding: 30px 0;
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) { 
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 0;
+
     }
+
+
 }
 
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    
-   
 
 
-.footer__logo-img {
-    display: block;
-}
-}
-
-@media (min-width: $desktop-width) {
-    
 
 
-    .footer__logo-img {
-        display: block;
-    }
-}
+
+
