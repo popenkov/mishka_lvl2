@@ -1,4 +1,4 @@
-/*   
+/*
 @font-face {
     font-family: "Open Sans";
     src: url("../fonts/opensans.woff2"),
@@ -7,7 +7,7 @@
     font-style: normal;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "Open Sans";
     src: url("../fonts/opensansbold.woff2"),
@@ -17,12 +17,12 @@
     font-display: swap;
   }
 */
-  
-  
+
+
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
- @function get-vw($target) { 
+ @function get-vw($target) {
   $vw-context: (1000*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }

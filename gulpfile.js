@@ -18,7 +18,7 @@ const rename = require("gulp-rename");
 
 const htmlmin = require("gulp-htmlmin");
 
-const uglify = require("gulp-uglify");
+const terser = require("gulp-terser");
 
 const imagemin = require("gulp-imagemin");
 
@@ -82,7 +82,7 @@ const scripts = () => {
 
 return gulp.src("source/js/script.js")
 
-.pipe(uglify())
+.pipe(terser())
 
 .pipe(rename("script.min.js"))
 
@@ -291,4 +291,4 @@ exports.default = gulp.series(
   });
 
 
-  
+
