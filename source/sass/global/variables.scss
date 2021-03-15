@@ -4,11 +4,21 @@ $tablet-width: 768px;
 $tablet-container: 668px;
 $desktop-width: 1150px;
 $desktop-container: 1050px;
-/* $max-width: 1150px; // было 1650 */
 
 
-//colors
+
+$white: #ffffff;
 $grey-background: #f1f1f1;
 $grey-border: #ececec;
 $dark-grey: #444444;
 $turquoise: #63d1bb;
+$black: #000000;
+
+
+
+
+$main-nav--hover: lighten($black, 60%);
+$main-nav--active: lighten($black, 30%);
+
+
+

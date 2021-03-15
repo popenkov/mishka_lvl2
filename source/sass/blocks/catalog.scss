@@ -67,16 +67,6 @@
     @media (min-width: $desktop-width) {
         max-width: $desktop-container;
         margin-top: 84px;
-
-
-
-
-
-        background-size: cover;
-
-
-
-
         background-image: url(../img/hero-desktop@1x.jpg);
         background-size: 1150px 746px;
         background-position: center bottom;
@@ -155,6 +145,13 @@
     list-style: none;
     width: 100%;
 
+    @media (min-width: $tablet-width) {
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+
 
 }
 
@@ -184,6 +181,21 @@
     line-height: 24px;
     color: #ffffff;
     font-weight: bold;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        font-size: get-vw(20px);
+        line-height: get-vw(30px);
+
+
+    }
+
+    .index-catalog__list-item:hover &{
+        opacity: .6;
+    }
+
+    .index-catalog__list-item:active &{
+        opacity: .3;
+    }
 }
 
 
@@ -225,7 +237,7 @@
         display: block;
 
         height: 24px;
-        margin-bottom: -10px;
+        margin-bottom: -5px;
         width: 100%;
 
 
@@ -240,7 +252,7 @@
     @media (min-width: $desktop-width) {
         display: block;
 
-        margin-bottom: -17px;
+        margin-bottom: -12px;
     height: 34px;
     width: 100%;
 
@@ -262,17 +274,6 @@
     .index-catalog__list {
         display: flex;
         flex-direction: row;
-
-    }
-
-    .index-catalog__link-title {
-        font-size: get-vw(20px);
-        line-height: get-vw(30px);
-    }
-
-    .index-catalog__list-item {
-
-        width: 100%;
 
     }
 
@@ -305,15 +306,13 @@
 
 
 
-    .index-catalog__list-item {
 
-        width: 100%;
-    }
 
     .index-catalog__list-link.catalog--interiors .index-catalog__link-container,
     .index-catalog__list-link.catalog--toys .index-catalog__link-container {
         margin: 0;
-        padding: 9% 10.4%;
+
+        padding: 28px 35px 30px;
 
 
         width: auto;

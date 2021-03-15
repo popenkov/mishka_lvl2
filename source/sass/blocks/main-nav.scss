@@ -7,8 +7,20 @@
 .main-nav__list {
     margin: 0;
     padding: 0;
- 
-   
+
+
+}
+
+.main-nav__list a {
+    color:$black;
+
+    &:hover {
+    color: $main-nav--hover;
+    }
+
+    &:active {
+        color: $main-nav--active;
+        }
 }
 
 .main-nav__list__closure-button {
@@ -17,14 +29,14 @@
 
 
 
-//если кликнуть по мобильной версии, а затем не закрывая меню отдалиться, то меню поедет. а елси сразу открыть на планшете и выше, то все норм
+
 .main-nav__wrapper--active {
     display: flex;
     flex-direction: column;
-    position: absolute; 
+    position: absolute;
     z-index: 2;
-    background-color: #ffffff; 
-    
+    background-color: #ffffff;
+
 
 
     /* width: $mobile-width; */
@@ -62,7 +74,7 @@ margin-top: -7px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         display: block;
-        
+
         right: 0;
         /* top: 115px; */
         z-index: 1;
@@ -74,19 +86,19 @@ margin-top: -7px;
 
         top: 89px;
         width: 50%;
-        
+
         padding-top: 25px;
         padding-bottom: 25px;
-        
+
         background-color: #fbfbfb;
         text-align: right;
     }
 
     @media (min-width: $desktop-width) {
         display: block;
-        
+
         right: 0;
-        
+
         z-index: 1;
         color: $dark-grey;
         font-size: 15px;
@@ -95,11 +107,11 @@ margin-top: -7px;
 
         top: 89px;
         width: 50%;
-        
+
         padding-top: 30px;
         padding-bottom: 30px;
 
-        
+
         background-color: #fbfbfb;
         text-align: right;
     }
@@ -112,28 +124,28 @@ margin-top: -7px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
 
-    
+
     left: 100%;
     width: 16%;
 
     height: 100%;
     background-color: #fbfbfb;
-  
+
 
 
     }
 
     @media (min-width: $desktop-width) {
-    
+
     left: 524px;
-    width: calc(50vw - 541px); 
-    
+    width: calc(50vw - 541px);
+
     height: 100%;
     background-color: #fbfbfb;
 
-    
+
     }
-} 
+}
 
 
 
@@ -143,31 +155,31 @@ margin-top: -7px;
         flex-wrap: wrap;
     }
 
-    
-    
+
+
 }
 
 @media (min-width: $desktop-width) {
 
     .main-nav {
-        
-        width: 100%; 
-    } 
+
+        width: 100%;
+    }
     .main-nav__wrapper {
         min-width: $desktop-container;
-       
-       
+
+
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-      
-        
+
+
     }
 
     .main-nav__list {
         margin: 0;
         padding: 0;
     }
-    
+
 }

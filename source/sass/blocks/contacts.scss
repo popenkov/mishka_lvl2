@@ -1,25 +1,25 @@
 .contacts {
-    
+
     margin-top: 40px;
     min-width: $mobile-width;
     margin: 0 auto;
     background-image: none;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-       
+
             min-width: $tablet-width;
-           
-      
+
+
     }
-    
+
     @media (min-width: $desktop-width) {
-        
+
             /* min-width: $desktop-width - 100px; */
             max-width: $desktop-container;
-          
-       
+
+
     }
-    
+
 }
 
 .contacts__wrapper {
@@ -37,8 +37,8 @@
         /* border: 1px solid orange; */
         margin: 0 auto;
     }
-    
-    
+
+
     @media (min-width: $desktop-width) {
         width: 91%; // 1050   ÷   1150 = 91
         padding: 0;
@@ -65,8 +65,8 @@
         margin: 0;
         padding: 0;
     }
-    
-    
+
+
     @media (min-width: $desktop-width) {
         width: auto;
         margin: 0;
@@ -74,7 +74,7 @@
         margin-left: 175px;
         margin-top: 90px;
     }
-   
+
 }
 
 
@@ -100,7 +100,7 @@
     margin-right: 30px; */
 
 
-    border-collapse: separate; 
+    border-collapse: separate;
     border-spacing: 0 40px;
 
     font-size: 15px;
@@ -133,6 +133,16 @@
     line-height: 30px;
     padding-bottom: 8px;
     border-bottom: 1px solid #62d1ba;
+
+
+    &:hover {
+        color: #62d1ba;
+    }
+
+    &:active {
+        color: #62d1ba;
+        opacity: .3;
+    }
 }
 
 .contacts__button {
@@ -147,7 +157,7 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
 
        /*  position: absolute; */
-       
+
        min-height: 457px;
        background-size: contain;
        margin: 0;
@@ -155,8 +165,8 @@
 
    @media (min-width: $desktop-width) {
 
-  
-       
+
+
     min-height: 457px;
         background-size: contain;
         margin: 0 ;
@@ -167,9 +177,9 @@
 
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    
 
-   
+
+
 
     .contacts__flag-img {
         display: block;
@@ -185,7 +195,7 @@
         line-height: get-vw(50px);
         font-weight: bold;
     }
-    
+
     .contacts__table {
         margin: 0;
         margin-bottom: 65px;
@@ -195,24 +205,24 @@
     }
 
     .contacts__table > tbody{
-        
+
 
         display: flex;
-        
+
     }
 
     .contacts__table-tr:first-child {
         margin-right: 55px;
     }
 
-   
+
 }
 
 
 @media (min-width: $desktop-width) {
-    
 
-   
+
+
     .contacts__flag-img {
         display: block;
         width: 47px;
@@ -224,7 +234,7 @@
     }
 
     .contacts__text {
-      
+
         margin: 0;
         padding: 0;
         margin-left: 175px;
@@ -237,7 +247,7 @@
         line-height: 57px;
         font-weight: bold;
     }
-    
+
     .contacts__table {
         margin: 0;
         font-size: 17px;
@@ -247,7 +257,7 @@
         width: 45.6%; // 525/1150
         min-height: 458px;
     }
-    
+
     .contacts__button {
         margin: 0;
 

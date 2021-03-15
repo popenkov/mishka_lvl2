@@ -28,6 +28,9 @@
             }
 
 
+
+
+
 }
 
 .slider__toggle--before,
@@ -46,6 +49,16 @@
 
             border: none;
         }
+
+        &:hover {
+            opacity: .6;
+        }
+
+        &:active {
+            opacity: .3;
+
+        }
+
 }
 
 .slider__toggle--before {
