@@ -80,7 +80,7 @@ return gulp.src("source/*.html")
 
 const scripts = () => {
 
-return gulp.src("source/js/script.js")
+return gulp.src("source/js/bundle.js")
 
 .pipe(terser())
 

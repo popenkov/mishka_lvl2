@@ -1,5 +1,6 @@
 {
   "private": true,
+  "main": "modules.js",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.4",
@@ -21,8 +22,9 @@
     "postcss": "8.1.10",
     "postcss-csso": "5.0.0",
     "stylelint": "13.8.0",
-    "stylelint-config-htmlacademy": "0.1.4"
-
+    "stylelint-config-htmlacademy": "0.1.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
