@@ -149,14 +149,22 @@
  margin: 40px auto;
 }
 
+.contacts__map-container {
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+
+            width: 45.6%; // 525/1150
+            min-height: 458px;
+        }
+}
+
 .contacts__map {
 
     margin: 0 auto;
     width: 100%;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-
-       /*  position: absolute; */
 
        min-height: 457px;
        background-size: contain;
@@ -173,6 +181,17 @@
 
 
    }
+}
+
+.contacts__map-pin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(calc(-50%), calc(-50%));
+    width: 66px;
+    height: 101px;
+    background-image: url(../img/icons/icon-map-pin.svg);
+    background-repeat: no-repeat;
 }
 
 
@@ -253,10 +272,6 @@
         font-size: 17px;
     }
 
-    .contacts__map-container {
-        width: 45.6%; // 525/1150
-        min-height: 458px;
-    }
 
     .contacts__button {
         margin: 0;

@@ -30,7 +30,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo--desktop.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo--tablet.svg">
-          <img src="img/mishka-logo--mobile.svg" alt="Логотип" class="main-logo__svg">
+          <img src="img/mishka-logo--mobile.svg" alt="Логотип" class="page-header__logo-svg">
         </picture>
       </a>
 
@@ -127,6 +127,7 @@
               srcset="img/content/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
           </picture>
 
+
           <div class="catalog__description">
             <div class="catalog__description-container">
               <h2 class="catalog__item-title"> Зайчик-попрыгайчик</h2>
@@ -134,7 +135,11 @@
             </div>
             <div class="catalog__price-container">
               <p class="catalog__item-price">1 200 руб.</p>
-              <button class="catalog__add-to-cart-button"> </button>
+              <button class="catalog__add-to-cart-button">
+                <svg class="catalog__add-to-cart-img" height="18" width="22">
+                    <use xlink:href="img/icons/sprite-icons.svg#header--cart"></use>
+                </svg>
+            </button>
             </div>
           </div>
         </li>
@@ -169,7 +174,11 @@
             </div>
             <div class="catalog__price-container">
               <p class="catalog__item-price">690 руб.</p>
-              <button class="catalog__add-to-cart-button"> </button>
+              <button class="catalog__add-to-cart-button">
+                <svg class="catalog__add-to-cart-img" height="18" width="22">
+                    <use xlink:href="img/icons/sprite-icons.svg#header--cart"></use>
+                </svg>
+            </button>
             </div>
           </div>
         </li>
@@ -197,11 +206,15 @@
           <div class="catalog__description">
             <div class="catalog__description-container">
               <h2 class="catalog__item-title"> Большая корзинка для игрушек</h2>
-              <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+              <p class="catalog__item-description">Диаметр 30 см, высота 30 см </p>
             </div>
             <div class="catalog__price-container">
               <p class="catalog__item-price">1 500 руб.</p>
-              <button class="catalog__add-to-cart-button"> </button>
+              <button class="catalog__add-to-cart-button">
+                <svg class="catalog__add-to-cart-img" height="18" width="22">
+                    <use xlink:href="img/icons/sprite-icons.svg#header--cart"></use>
+                </svg>
+            </button>
             </div>
           </div>
         </li>
@@ -291,9 +304,11 @@
 
 
 
-      <svg width="102" height="34" class="footer__logo-img">
-        <use xlink:href="img/icons/sprite-icons.svg#footer__logo"></use>
-      </svg>
+        <a href="index.html">
+            <svg width="102" height="34" class="footer__logo-img">
+              <use xlink:href="img/icons/sprite-icons.svg#footer__logo"></use>
+            </svg>
+            </a>
 
       <div class="page-footer__social social">
 

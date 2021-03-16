@@ -6,8 +6,7 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    width: $mobile-width;
-    padding: 35px  75px;  
+    padding: 35px  75px;
     border-bottom: 1px solid $grey-border;
 
     font-size: 17px;
@@ -41,7 +40,7 @@
         margin: 0;
         padding: 0;
         border-style: none;
-        
+
         font-size: get-vw(15px);
         /* order: -1; */
     }
@@ -89,7 +88,7 @@
         margin: 0;
         padding: 0;
         border-style: none;
-        order: -1; 
+        order: -1;
     }
 
     .user-list {

@@ -123,27 +123,17 @@ margin-top: -7px;
     top: 0;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-
-
     left: 100%;
     width: 16%;
-
     height: 100%;
     background-color: #fbfbfb;
-
-
-
     }
 
     @media (min-width: $desktop-width) {
-
     left: 524px;
     width: calc(50vw - 541px);
-
     height: 100%;
     background-color: #fbfbfb;
-
-
     }
 }
 

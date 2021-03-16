@@ -87,8 +87,14 @@
 
     margin: 0;
     padding: 0;
-    /* margin: 0 auto; */
     margin-bottom: 30px;
+    /* margin: 0 auto; */
+
+
+    //НОВОЕ
+    display: flex;
+
+    flex-direction: column;
 
 
 
@@ -104,14 +110,23 @@
         width: 100%; //668 / 768px
         /* margin: 0 auto; */
         margin-bottom: 55px;
+        flex-direction: row;
 
-        display: flex;
     }
 
     @media (min-width: $desktop-width) {
         /* margin: 0 auto; */
     padding: 0;
         width: 316px; //316   ÷   1050 (измеряем от контейнера) = 27% !!!!!!!было 30%
+        margin-bottom: 0px;
+    }
+
+    &:hover {
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -143,7 +158,6 @@
 }
 
 .catalog__description {
-    margin: 0;
     padding: 0;
     margin: 0 auto;
 
@@ -154,16 +168,20 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        /* min-width: $tablet-width; */
-       /*  width: 269px; */
        margin: 0;
        box-sizing: border-box;
        width: 50%;
         padding: 0 29px;
         min-height: 0;
+    }
+
+
+    @media (min-width: $desktop-width) {
+        flex-grow: 1;
     }
 
 }
@@ -184,7 +202,7 @@
 .catalog__item-description {
     margin: 0;
     padding: 0;
-    margin-top: 24px;
+    margin-top: 5px;
 
     color: $dark-grey;
     font-size: 13px;
@@ -196,19 +214,21 @@
 
 
 
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
-    margin: 0 auto;
+    /* margin: 0 auto;
+    margin-top: auto; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin-bottom: 30px; */
     margin-top: auto;
-    padding-top: 30px;
-    margin-bottom: 30px;
-
 
     width: 100%;
     border-top: 1px solid $grey-border;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -221,10 +241,19 @@
 
 .catalog__add-to-cart-button {
     background-color: #ffffff;
-    background-image: url(/source/img/catalog/add-to-cart-button.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 19px;
+    padding: 25px 30px;
     border: none;
+    cursor: pointer;
+}
+
+.catalog__add-to-cart-img {
+    &:hover {
+        fill:$turquoise;
+    }
+
+    &:active {
+        fill:$turquoise;
+        fill-opacity: 0.3;
+    }
 }
 

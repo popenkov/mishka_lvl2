@@ -18,6 +18,14 @@
         margin-top: 60px;
         padding-left: 682px;
     }
+
+    &:hover {
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .production-video__decription-container {
@@ -210,8 +218,14 @@
 .production-video__play-button-img {
   cursor: pointer;
 
+
   &:hover {
     transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    fill-opacity: 0.8;
   }
 }
 

@@ -57,7 +57,32 @@
           display: block;
           padding-right: 82px;
   }
+
+  &:hover {
+    fill:$turquoise;
 }
+
+&:active {
+    fill:$turquoise;
+    fill-opacity: .3;
+}
+}
+
+.social-link--instagram-img,
+.social-link--facebook-img,
+.social-link--twitter-img {
+    &:hover {
+        fill:$turquoise;
+        }
+
+        &:active {
+        fill:$turquoise;
+        fill-opacity: .3;
+        }
+}
+
+
+
 
 .page-footer__copyright {
     padding: 30px 0;
@@ -67,7 +92,26 @@
 
     }
 
+}
 
+.copyright-link__wrapper{
+    &:hover {
+
+        fill:$turquoise;
+    }
+    &:hover .copyright-link__text {
+        color:$turquoise;
+    }
+
+    &:active {
+
+        fill:$turquoise;
+        fill-opacity: .3;
+    }
+    &:active .copyright-link__text {
+        color:$turquoise;
+        opacity: .3;
+    }
 }
 
 
