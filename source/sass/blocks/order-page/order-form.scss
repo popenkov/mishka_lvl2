@@ -598,19 +598,22 @@ fieldset {
 
 
 .order-form__additional-input {
-    /* display: block; */
+    display: block;
     width: 100%;
+    max-width: 100%;
     min-height: 138px;
     padding: 15px;
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         margin-left: 167px;
-        width: auto;
+        width: calc(100% - 200px);
 
     }
 
     @media (min-width: $desktop-width) {
         margin-left: 175px;
+        width: calc(100% - 200px);
+
     }
 }
