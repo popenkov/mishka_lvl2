@@ -7,6 +7,10 @@ function popup() {
     menuToggle.addEventListener('click', function () {
       modalMenuMobile.classList.toggle('main-nav__wrapper--active');
 
+      window.addEventListener(`resize`, event => {
+        modalMenuMobile.classList.remove('main-nav__wrapper--active');
+      });
+
     })
 
 
